@@ -1,0 +1,10 @@
+Rest api -JSON
+
+GET?user-LIST ALL user
+
+
+GET ?USER?1-GET the user with ID 1
+GET/user/2-get the user with id 2
+
+
+
