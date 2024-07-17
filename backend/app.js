@@ -1,29 +1,3 @@
-// import express from "express";
-// import { config } from "dotenv";
-// import cors from "cors";
-// import data from "./MOCK_DATA.json";
-// const app = express();
-// const users=  require("./MOCK_DATA.json");
-
-// // Load environment variables
-// config({ path: "./config/config.env" });
-
-// // Middleware
-// app.use(cors());
-// app.use(express.json()); // To parse JSON request bodies
-
-// // Routes
-// app.get("/", (req, res) => {
-//     console.log("server working");
-//     res.send("Server is working");
-// });
-
-// app.get("/users",(req,res)=>{
-//     return res.json(users);
-// })
-
-// export default app;
-
 import express from "express";
 import { config } from "dotenv";
 import cors from "cors";
@@ -45,29 +19,27 @@ const data = JSON.parse(readFileSync(dataPath, "utf-8"));
 
 // Routes
 app.get("/", (req, res) => {
-    console.log("server working");
-    res.send("Server is working");
+  console.log("server working");
+  res.send("Server is working");
 });
 
 app.get("/users", (req, res) => {
-    return res.json(data);
+  return res.json(data);
 });
 
 // Error handling for unhandled routes
 app.use((req, res, next) => {
-    res.status(404).send("Sorry can't find that!");
+  res.status(404).send("Sorry can't find that!");
 });
 
 // Error handling middleware
 app.use((err, req, res, next) => {
-    console.error(err.stack);
-    res.status(500).send("Something broke!");
+  console.error(err.stack);
+  res.status(500).send("Something broke!");
 });
 
-// const PORT = 6000 ;
-
-// app.listen(PORT, () => {
-//     console.log(`Server running on port ${PORT}`);
-// });
+app.listen(7600, () => {
+  console.log(`server listening on port ${7600}`);
+});
 
 export default app;
