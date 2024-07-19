@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import WeddingCarouselTop from "./components/WeddingCarouselTop";
+import AboutUsSectionHomepage from "./components/AboutUsSectionHomepage";
 
 const App = () => {
   return (
-    <div className='text-4xl'>App</div>
-  )
-}
+    <>
+      <WeddingCarouselTop />
+      <AboutUsSectionHomepage />
+    </>
+  );
+};
 
-export default App
+export default App;
