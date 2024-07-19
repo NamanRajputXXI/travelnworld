@@ -4,6 +4,7 @@ import AboutUsSectionHomepage from "./components/AboutUsSectionHomepage";
 import OurTravelAgents from "./components/OurTravelAgents";
 import InternationalTopTourPackage from "./components/InternationalTopTourPackage";
 import DomesticTopTourPackage from "./components/DomesticTopTourPackage";
+import VerifiedHotel from "./components/VerifiedHotel";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <AboutUsSectionHomepage />
       <OurTravelAgents />
       <InternationalTopTourPackage />
+      <VerifiedHotel />
       <DomesticTopTourPackage />
     </>
   );
