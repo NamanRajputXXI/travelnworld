@@ -51,7 +51,7 @@ const WeddingCarouselTop = () => {
   }, [slides.length]);
 
   return (
-    <div className="relative overflow-hidden w-full h-56">
+    <div className="relative md:mb-20 mb:10 overflow-hidden w-full h-56">
       <div
         className="flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
