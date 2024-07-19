@@ -3,10 +3,10 @@ import React from "react";
 const Herosection = () => {
   return (
     <div
-      className="  w-full h-fit bg-cover   bg-transparent bg-center  relative " 
+      className="  w-full h-fit bg-cover  md:mb-20 mb-10 bg-transparent bg-center  relative " 
       style={{ backgroundImage: "url('../assets/goa.jpg')" }} 
     >
-      <div className=" py-16 px-5">
+      <div className=" py-10 px-5">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between md:items-start items-center">
             <div className="md:w-1/2 lg:w-2/3">
@@ -36,7 +36,7 @@ const Herosection = () => {
                       required
                     />
                   </div>
-                  <div className="mb-5">
+                  <div className="mb-5 ">
                     <label
                       htmlFor="mobileNumber"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
