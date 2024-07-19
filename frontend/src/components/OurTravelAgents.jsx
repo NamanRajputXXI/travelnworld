@@ -103,14 +103,14 @@ const OurTravelAgents = () => {
       <div className="mx-auto relative max-w-[1340px] px-4 md:py-20 py-10 sm:px-6    lg:ps-8 ">
         <div className="max-w-7xl sm:px-8 items-end justify-center sm:flex sm:pe-6 lg:pe-8">
           <h1 className="text-center text-[#01055b]  md:text-5xl text-2xl  ">
-            Travel Agents
+            Top Travellers
           </h1>
         </div>
         <div className="mt-8 relative max-w-7xl sm:flex hidden gap-4 lg:mt-0">
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full absolute md:top-[140px] top-[110px] -left-[20px] z-[100] border flex justify-center  items-center  bg-gray-100 shadow-xl p-5  transition  hover:text-white"
+            className="rounded-full absolute md:top-[140px] top-[110px] -left-[20px] z-[100] border flex justify-center  items-center  bg-gray-200 shadow-xl p-5  transition  hover:text-white"
           >
             <span className="inline-block h-5 w-5">
               <svg
@@ -129,7 +129,7 @@ const OurTravelAgents = () => {
           <button
             aria-label="Next slide"
             onClick={handleNextSlide}
-            className="rounded-full border absolute -right-[20px] md:top-[140px] top-[110px] z-[100]  bg-gray-100 shadow-xl p-5 flex justify-center items-center  transition  hover:text-white"
+            className="rounded-full border absolute -right-[20px] md:top-[140px] top-[110px] z-[100]  bg-gray-200 shadow-xl p-5 flex justify-center items-center  transition  hover:text-white"
           >
             <span className="inline-block h-5 w-5">
               <svg
@@ -150,7 +150,7 @@ const OurTravelAgents = () => {
         <div className=" sm:mt-16 relative mt-8 lg:col-span-2 sm:px-8  px-3 lg:mx-0">
           <div ref={sliderContainer} className="keen-slider">
             {ourTravelAgents.map((item, i) => (
-              <div href={item.link} key={i}>
+              <div key={i}>
                 <div className="keen-slider__slide" key={i}>
                   <div className="flex border-[1px] p-5 border-gray-600 rounded-lg relative w-full sm:w-auto">
                     <div className="flex sm:flex-row flex-col-reverse sm:justify-start justify-center sm:items-start items-center">
@@ -180,7 +180,7 @@ const OurTravelAgents = () => {
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full border flex justify-center  items-center bg-gray-100  p-5 shadow-xl transition  hover:text-white"
+            className="rounded-full border flex justify-center  items-center bg-gray-200  p-5 shadow-xl transition  hover:text-white"
           >
             <span className="inline-block h-5 w-5">
               <svg
@@ -199,7 +199,7 @@ const OurTravelAgents = () => {
           <button
             aria-label="Next slide"
             onClick={handleNextSlide}
-            className="rounded-full border   bg-gray-100  p-5 shadow-xl  flex justify-center items-center t transition  hover:text-white"
+            className="rounded-full border   bg-gray-200  p-5 shadow-xl  flex justify-center items-center t transition  hover:text-white"
           >
             <span className="inline-block h-5 w-5">
               <svg
