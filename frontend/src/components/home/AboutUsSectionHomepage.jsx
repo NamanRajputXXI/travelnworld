@@ -22,14 +22,14 @@ const AboutUsSectionHomepage = () => {
         </h5>
         <p className="sm:text-lg text-sm ">
           At TravelnWorld, we specialize in curating unforgettable travel
-          experiences for honeymoon couples. Our team of professional travel
-          planners is dedicated to making your dream trip a reality. Whether
-          you're looking to explore the serene beaches of Goa, the majestic
-          mountains of Himachal Pradesh, or the romantic backwaters of Kerala,
-          we've got you covered. With personalized itineraries, exclusive deals,
-          and 24/7 support, we ensure that your journey is as seamless and
-          enjoyable as possible. Trust us to take care of every detail, so you
-          can focus on creating beautiful memories with your loved one.
+          experiences. Our team of professional travel planners is dedicated to
+          making your dream trip a reality. Whether you're looking to explore
+          the serene beaches of Goa, the majestic mountains of Himachal Pradesh,
+          or the romantic backwaters of Kerala, we've got you covered. With
+          personalized itineraries, exclusive deals, and 24/7 support, we ensure
+          that your journey is as seamless and enjoyable as possible. Trust us
+          to take care of every detail, so you can focus on creating beautiful
+          memories.
         </p>
       </div>
     </div>

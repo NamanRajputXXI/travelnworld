@@ -7,44 +7,36 @@ const FreeRegisteredTravelAgents = () => {
   // Destinations Data
   const ourTravelAgents = [
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
-      title: "Bhutan",
-      link: "/packages/bhutan",
+      name: "RR TOUR AND TRAVELS",
+      phone: "6304234227",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
-      title: "Bangladesh",
-      link: "/product-category/international/bangladesh",
+      name: "FINNA TRAVELS",
+      phone: "7006457689",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
-      title: "Mauritious",
-      link: "/product-category/international/mauritious",
+      name: "FINNA TRAVEL",
+      phone: "7006457689",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
-      title: "Switzerland",
-      link: "/product-category/international/switzerland",
+      name: "TRAWELL.IN",
+      phone: "7799591230",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
-      title: "Dubai",
-      link: "/packages/dubai",
+      name: "RR TOUR AND TRAVELS",
+      phone: "6304234227",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
-      title: "Nepal",
-      link: "/packages/nepal",
+      name: "FINNA TRAVELS",
+      phone: "7006457689",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
-      title: "Singapore",
-      link: "/packages/singapore",
+      name: "FINNA TRAVEL",
+      phone: "7006457689",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
-      title: "Thailand",
-      link: "/packages/thailand",
+      name: "TRAWELL.IN",
+      phone: "7799591230",
     },
   ];
 
@@ -151,10 +143,13 @@ const FreeRegisteredTravelAgents = () => {
                   <div className="flex border-[1px] p-5 border-gray-600 rounded-lg relative w-full sm:w-auto">
                     <div className="flex sm:flex-row flex-col-reverse sm:justify-start justify-center sm:items-start items-center">
                       <div className="flex gap-2 sm:justify-start justify-center sm:items-start items-center flex-col">
-                        <h1 className="text-xl font-bold">Richie Rich</h1>
+                        <h1 className="text-xl font-bold">{item.name}</h1>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit.
+                          <span className="font-semibold text-xl">
+                            {" "}
+                            Mobile -{" "}
+                          </span>
+                          {item.phone}
                         </p>
                         <button className="w-40 p-2 flex items-center justify-center text-white rounded-lg bg-[#01055b]">
                           Contact

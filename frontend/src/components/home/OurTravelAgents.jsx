@@ -7,44 +7,34 @@ const OurTravelAgents = () => {
   // Destinations Data
   const ourTravelAgents = [
     {
-      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
-      title: "Bhutan",
-      link: "/packages/bhutan",
+      imageUrl: `/Images/travelAgenciesLogo/richieRichTravels.png`,
+      name: "RICHE RICH TOURS AND TRAVELS",
+      phone: "9632417602",
     },
     {
       imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
-      title: "Bangladesh",
-      link: "/product-category/international/bangladesh",
+      name: "Travels YUG",
+      phone: "9625624780",
     },
     {
-      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
-      title: "Mauritious",
-      link: "/product-category/international/mauritious",
+      imageUrl: `/Images/travelAgenciesLogo/kamakshiHolidays.png`,
+      name: "KAMAKSHI HOLIDAYS",
+      phone: "9881290229",
     },
     {
-      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
-      title: "Switzerland",
-      link: "/product-category/international/switzerland",
+      imageUrl: `/Images/travelAgenciesLogo/southIndianHolidays.jpeg`,
+      name: "SOUTH INDIAN HOLIDAYS",
+      phone: "7567891018",
     },
     {
-      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
-      title: "Dubai",
-      link: "/packages/dubai",
+      imageUrl: `/Images/travelAgenciesLogo/perfectPlanners.png`,
+      name: "PERFECT PLANNERS",
+      phone: "9596863183",
     },
     {
-      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
-      title: "Nepal",
-      link: "/packages/nepal",
-    },
-    {
-      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
-      title: "Singapore",
-      link: "/packages/singapore",
-    },
-    {
-      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
-      title: "Thailand",
-      link: "/packages/thailand",
+      imageUrl: `/Images/travelAgenciesLogo/sathyaTravels.png`,
+      name: "SATHYA TRAVELS",
+      phone: "9965539599",
     },
   ];
 
@@ -110,7 +100,7 @@ const OurTravelAgents = () => {
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full absolute md:top-[140px] top-[110px] -left-[10px] z-[100] border flex justify-center  items-center  bg-[#01055b] shadow-xl p-4  transition  hover:text-white"
+            className="rounded-full absolute md:top-[180px] top-[110px] -left-[10px] z-[100] border flex justify-center  items-center  bg-[#01055b] shadow-xl p-4  transition  hover:text-white"
           >
             <svg
               aria-hidden="true"
@@ -127,7 +117,7 @@ const OurTravelAgents = () => {
           <button
             aria-label="Next slide"
             onClick={handleNextSlide}
-            className="rounded-full border absolute -right-[10px] md:top-[140px] top-[110px] z-[100]  bg-[#01055b] shadow-xl p-4 flex justify-center items-center  transition  hover:text-white"
+            className="rounded-full border absolute -right-[10px] md:top-[180px] top-[110px] z-[100]  bg-[#01055b] shadow-xl p-4 flex justify-center items-center  transition  hover:text-white"
           >
             <svg
               aria-hidden="true"
@@ -149,18 +139,21 @@ const OurTravelAgents = () => {
               <div key={i}>
                 <div className="keen-slider__slide" key={i}>
                   <div className="flex border-[1px] p-5 border-gray-600 rounded-lg relative w-full sm:w-auto">
-                    <div className="flex sm:flex-row flex-col-reverse sm:justify-start justify-center sm:items-start items-center">
-                      <div className="flex gap-2 sm:justify-start justify-center sm:items-start items-center flex-col">
-                        <h1 className="text-xl font-bold">Richie Rich</h1>
+                    <div className="flex w-full flex-col justify-center  items-center">
+                      <img src={item.imageUrl} alt="" className="w-auto h-32" />
+                      <div className="flex gap-4 justify-center  items-center flex-col">
+                        <h1 className="text-xl font-bold">{item.name}</h1>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit.
+                          <span className="font-semibold text-xl">
+                            {" "}
+                            Mobile -{" "}
+                          </span>
+                          {item.phone}
                         </p>
                         <button className="w-40 p-2 flex items-center justify-center text-white rounded-lg bg-[#01055b]">
                           Contact
                         </button>
                       </div>
-                      <img src={item.imageUrl} alt="" className="h-20 w-44" />
                     </div>
                   </div>
                 </div>
