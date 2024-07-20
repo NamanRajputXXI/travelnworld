@@ -3,7 +3,7 @@ import React from "react";
 const Herosection = () => {
   return (
     <div
-      className="  w-full h-fit bg-cover  md:mb-20 mb-10 bg-transparent bg-center  relative " 
+      className="  w-full h-fit bg-cover  bg-transparent bg-center  relative " 
       style={{ backgroundImage: "url('../assets/goa.jpg')" }} 
     >
       <div className=" py-10 px-5">

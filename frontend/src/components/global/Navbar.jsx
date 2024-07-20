@@ -7,7 +7,7 @@
 
 import React, { useState } from 'react';
 
-const Header = () => {
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const onToggleMenu = () => {
@@ -93,5 +93,5 @@ const ContactUs = ({ mobile = false }) => (
   </div>
 );
 
-export default Header;
+export default Navbar;
 

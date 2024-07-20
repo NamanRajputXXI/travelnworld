@@ -1,14 +1,16 @@
 import React from 'react'
-import Header from './components/Header'
-import Herosection from './components/Herosection'
-import Client from './components/Client'
+import Herosection from './components/home/Herosection'
+import Client from './components/home/Client'
+import Footer from './components/global/Footer'
+import Navbar from './components/global/Navbar'
 
 const App = () => {
   return (
     <>
-    <Header/>
+    <Navbar/>
     <Herosection/>
    <Client/>
+   <Footer/>
     </>
    
   )
