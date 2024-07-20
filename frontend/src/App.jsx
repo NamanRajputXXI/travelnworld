@@ -1,13 +1,13 @@
 import React from "react";
-import WeddingCarouselTop from "./components/WeddingCarouselTop";
-import AboutUsSectionHomepage from "./components/AboutUsSectionHomepage";
-import OurTravelAgents from "./components/OurTravelAgents";
-import InternationalTopTourPackage from "./components/InternationalTopTourPackage";
-import DomesticTopTourPackage from "./components/DomesticTopTourPackage";
-import VerifiedHotel from "./components/VerifiedHotel";
-import VerifiedTransport from "./components/VerifiedTransport";
-import FreeRegisteredTravelAgents from "./components/FreeRegisteredTravelAgents";
-import BlogSection from "./components/BlogSection";
+import WeddingCarouselTop from "./components/home/WeddingCarouselTop";
+import AboutUsSectionHomepage from "./components/home/AboutUsSectionHomepage";
+import OurTravelAgents from "./components/home/OurTravelAgents";
+import InternationalTopTourPackage from "./components/home/InternationalTopTourPackage";
+import DomesticTopTourPackage from "./components/home/DomesticTopTourPackage";
+import VerifiedHotel from "./components/home/VerifiedHotel";
+import VerifiedTransport from "./components/home/VerifiedTransport";
+import FreeRegisteredTravelAgents from "./components/home/FreeRegisteredTravelAgents";
+import BlogSection from "./components/home/BlogSection";
 
 const App = () => {
   return (
