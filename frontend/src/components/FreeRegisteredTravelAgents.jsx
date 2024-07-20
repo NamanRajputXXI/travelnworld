@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import KeenSlider from "keen-slider";
 import "keen-slider/keen-slider.min.css";
-const OurTravelAgents = () => {
+const FreeRegisteredTravelAgents = () => {
   // Destinations Data
   const ourTravelAgents = [
     {
@@ -103,14 +103,14 @@ const OurTravelAgents = () => {
       <div className="mx-auto relative max-w-[1340px] px-4 md:py-20 py-10 sm:px-6    lg:ps-8 ">
         <div className="max-w-7xl sm:px-8 items-end justify-center sm:flex sm:pe-6 lg:pe-8">
           <h1 className="text-center text-[#01055b]  md:text-5xl text-2xl  ">
-            Top Travel Agents
+            Registered Travel Agents
           </h1>
         </div>
         <div className="mt-8 relative max-w-7xl sm:flex hidden gap-4 lg:mt-0">
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full absolute md:top-[140px] top-[110px] -left-[20px] z-[100] border flex justify-center  items-center  bg-gray-200 shadow-xl p-5  transition  hover:text-white"
+            className="rounded-full absolute md:top-[120px] top-[110px] -left-[20px] z-[100] border flex justify-center  items-center  bg-gray-200 shadow-xl p-5  transition  hover:text-white"
           >
             <span className="inline-block h-5 w-5">
               <svg
@@ -129,7 +129,7 @@ const OurTravelAgents = () => {
           <button
             aria-label="Next slide"
             onClick={handleNextSlide}
-            className="rounded-full border absolute -right-[20px] md:top-[140px] top-[110px] z-[100]  bg-gray-200 shadow-xl p-5 flex justify-center items-center  transition  hover:text-white"
+            className="rounded-full border absolute -right-[20px] md:top-[120px] top-[110px] z-[100]  bg-gray-200 shadow-xl p-5 flex justify-center items-center  transition  hover:text-white"
           >
             <span className="inline-block h-5 w-5">
               <svg
@@ -164,11 +164,6 @@ const OurTravelAgents = () => {
                           Contact
                         </button>
                       </div>
-                      <img
-                        src="https://www.richierichholidays.in/img/logo.png"
-                        alt=""
-                        className="h-20 w-44"
-                      />
                     </div>
                   </div>
                 </div>
@@ -221,4 +216,4 @@ const OurTravelAgents = () => {
   );
 };
 
-export default OurTravelAgents;
+export default FreeRegisteredTravelAgents;

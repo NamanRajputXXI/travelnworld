@@ -6,6 +6,7 @@ import InternationalTopTourPackage from "./components/InternationalTopTourPackag
 import DomesticTopTourPackage from "./components/DomesticTopTourPackage";
 import VerifiedHotel from "./components/VerifiedHotel";
 import VerifiedTransport from "./components/VerifiedTransport";
+import FreeRegisteredTravelAgents from "./components/FreeRegisteredTravelAgents";
 
 const App = () => {
   return (
@@ -17,6 +18,10 @@ const App = () => {
       <VerifiedHotel />
       <DomesticTopTourPackage />
       <VerifiedTransport />
+      <FreeRegisteredTravelAgents />
+      <InternationalTopTourPackage />
+      <VerifiedHotel />
+      <DomesticTopTourPackage />
     </>
   );
 };
