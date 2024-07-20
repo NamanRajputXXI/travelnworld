@@ -7,42 +7,42 @@ const OurTravelAgents = () => {
   // Destinations Data
   const ourTravelAgents = [
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
+      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
       title: "Bhutan",
       link: "/packages/bhutan",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
+      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
       title: "Bangladesh",
       link: "/product-category/international/bangladesh",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
+      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
       title: "Mauritious",
       link: "/product-category/international/mauritious",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
+      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
       title: "Switzerland",
       link: "/product-category/international/switzerland",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
+      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
       title: "Dubai",
       link: "/packages/dubai",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
+      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
       title: "Nepal",
       link: "/packages/nepal",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
+      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
       title: "Singapore",
       link: "/packages/singapore",
     },
     {
-      imageUrl: `https://cdn.pixabay.com/photo/2020/04/01/10/31/zzz-4990731_640.jpg`,
+      imageUrl: `/Images/travelAgenciesLogo/travelYug.jpg`,
       title: "Thailand",
       link: "/packages/thailand",
     },
@@ -160,11 +160,7 @@ const OurTravelAgents = () => {
                           Contact
                         </button>
                       </div>
-                      <img
-                        src="https://www.richierichholidays.in/img/logo.png"
-                        alt=""
-                        className="h-20 w-44"
-                      />
+                      <img src={item.imageUrl} alt="" className="h-20 w-44" />
                     </div>
                   </div>
                 </div>

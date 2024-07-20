@@ -15,21 +15,21 @@ const AboutUsSectionHomepage = () => {
           className="sm:h-[320px] h-[200px] absolute object-cover  bottom-0 sm:-right-[100px] -right-[50px] sm:rounded-[130px] rounded-[80px] border-white border-[5px] sm:border-[10px] w-[150px] sm:w-[250px]"
         />
       </div>
-      <div className="flex lg:w-1/2 w-full   flex-col gap-5">
-        <h1 className="text-[#fb3203] font-bold text-xl">About us</h1>
+      <div className="flex lg:w-1/2 w-full flex-col gap-5">
+        <h1 className="text-[#fb3203] font-bold text-xl">About Us</h1>
         <h5 className="text-3xl font-bold  text-[#01055b]">
-          We are proffesional planner for your trip
+          Your Trusted Travel Experts
         </h5>
         <p className="sm:text-lg text-sm ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          quidem, natus obcaecati in consectetur repellat praesentium illo totam
-          odit provident impedit quis, delectus explicabo cupiditate. Pariatur
-          quo eligendi veniam maiores, est explicabo facilis atque itaque
-          exercitationem quaerat mollitia perferendis provident, ullam eveniet,
-          error cupiditate officiis debitis hic culpa velit minima amet. Quam
-          officiis praesentium, necessitatibus adipisci, a qui, hic voluptate
-          temporibus voluptates illum similique delectus reprehenderit veritatis
-          quod ipsum eaque commodi! Velit unde deserunt sint fugit cupiditate
+          At TravelnWorld, we specialize in curating unforgettable travel
+          experiences for honeymoon couples. Our team of professional travel
+          planners is dedicated to making your dream trip a reality. Whether
+          you're looking to explore the serene beaches of Goa, the majestic
+          mountains of Himachal Pradesh, or the romantic backwaters of Kerala,
+          we've got you covered. With personalized itineraries, exclusive deals,
+          and 24/7 support, we ensure that your journey is as seamless and
+          enjoyable as possible. Trust us to take care of every detail, so you
+          can focus on creating beautiful memories with your loved one.
         </p>
       </div>
     </div>
