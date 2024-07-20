@@ -4,7 +4,7 @@ const Herosection = () => {
   return (
 <div
       className="  w-full h-fit bg-cover  bg-transparent bg-center  relative " 
-      style={{ backgroundImage: "url('../assets/goa.jpg')" }} 
+      style={{ backgroundImage: "url('/Images/Homepageimages/goa.jpg')" }} 
     >
       <div className=" py-10 px-5">
         <div className="max-w-7xl mx-auto">

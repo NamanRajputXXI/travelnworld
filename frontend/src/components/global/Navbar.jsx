@@ -28,7 +28,7 @@ const Navbar = () => {
 
 const Logo = () => (
   <div className="z-50">
-    <img className="w-16 cursor-pointer" src="../assets/logo.png" alt="Logo" />
+    <img className="w-16 cursor-pointer" src="/Images/Homepageimages/logo.png" alt="Logo" />
   </div>
 );
 
