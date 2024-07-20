@@ -1,10 +1,9 @@
-
 import React from "react";
-import Herosection from './components/home/Herosection'
-import Client from './components/home/Client'
-import Footer from './components/global/Footer'
-import Navbar from './components/global/Navbar'
-import GrowBuisness from './components/home/GrowBuisness'
+import Herosection from "./components/home/Herosection";
+import Client from "./components/home/Client";
+import Footer from "./components/global/Footer";
+import Navbar from "./components/global/Navbar";
+import GrowBuisness from "./components/home/GrowBuisness";
 import WeddingCarouselTop from "./components/home/WeddingCarouselTop";
 import AboutUsSectionHomepage from "./components/home/AboutUsSectionHomepage";
 import OurTravelAgents from "./components/home/OurTravelAgents";
@@ -19,11 +18,11 @@ import Testimonial from "./components/home/Testimonial";
 const App = () => {
   return (
     <>
-       <Navbar/>
+      <Navbar />
       <WeddingCarouselTop />
-       <HeroSection/>
+      <Herosection />
       <AboutUsSectionHomepage />
-       <Client /> 
+      <Client />
       <OurTravelAgents />
       <InternationalTopTourPackage />
       <VerifiedHotel />
@@ -33,10 +32,10 @@ const App = () => {
       <InternationalTopTourPackage />
       <VerifiedHotel />
       <DomesticTopTourPackage />
-       <GrowBuisness/> 
+      <GrowBuisness />
       <BlogSection />
       <Testimonial />
-      <Footer /> 
+      <Footer />
     </>
   );
 };
