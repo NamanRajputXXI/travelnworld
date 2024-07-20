@@ -13,8 +13,12 @@ import Testimonial from "./components/home/Testimonial";
 const App = () => {
   return (
     <>
+      {/* <Navbar/> */}
+
       <WeddingCarouselTop />
+      {/* <HeroSection/> */}
       <AboutUsSectionHomepage />
+      {/* <Client /> */}
       <OurTravelAgents />
       <InternationalTopTourPackage />
       <VerifiedHotel />
@@ -24,8 +28,10 @@ const App = () => {
       <InternationalTopTourPackage />
       <VerifiedHotel />
       <DomesticTopTourPackage />
+      {/* <BannerSection/> */}
       <BlogSection />
       <Testimonial />
+      {/* <Footer /> */}
     </>
   );
 };
