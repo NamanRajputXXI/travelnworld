@@ -1,5 +1,10 @@
 
 
+
+
+
+
+
 import React, { useState } from 'react';
 
 const Header = () => {
@@ -10,8 +15,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white p-5">
-      <nav className="flex justify-between items-center max-w-7xl mx-auto">
+    <header className="bg-white p-5 relative  z-50 w-full ">
+      <nav className="flex justify-between items-center max-w-7xl mx-auto  ">
         <Logo />
         <NavLinks menuOpen={menuOpen} />
         <MenuToggle onClick={onToggleMenu} menuOpen={menuOpen} />
@@ -22,14 +27,14 @@ const Header = () => {
 };
 
 const Logo = () => (
-  <div>
+  <div className="z-50">
     <img className="w-16 cursor-pointer" src="../assets/logo.png" alt="Logo" />
   </div>
 );
 
 const NavLinks = ({ menuOpen }) => (
-  <div className={`nav-links   duration-500 lg:static absolute bg-white lg:min-h-fit min-h-[60vh] left-0 ${menuOpen ? 'top-[100px]' : 'top-[-100%]'} lg:w-auto w-full flex items-center px-5 lg:px-0`}>
-    <ul className={`flex lg:flex-row flex-col lg:items-center lg:gap-[4vw] gap-8 w-full lg:w-auto ${menuOpen ? 'flex flex-col items-center justify-center' : 'hidden lg:flex'}`}>
+  <div className={`nav-links duration-500 lg:static absolute bg-white lg:min-h-fit min-h-[60vh] left-0 z-40 ${menuOpen ? 'top-[60px]' : 'top-[-500%]'} lg:w-auto w-full flex items-center px-5 lg:px-0`}>
+    <ul className={`flex font-medium  py-5 lg:flex-row flex-col lg:items-center gap-5 w-full lg:w-auto ${menuOpen ? 'flex flex-col items-center justify-center' : 'hidden lg:flex'}`}>
       <NavLink href="#" text="Home" />
       <NavLink href="#" text="About us" />
       <NavLink href="#" text="Packages" />
@@ -49,7 +54,7 @@ const NavLink = ({ href, text }) => (
 );
 
 const MenuToggle = ({ onClick, menuOpen }) => (
-  <div onClick={onClick} className="text-3xl cursor-pointer lg:hidden">
+  <div onClick={onClick} className="text-3xl cursor-pointer lg:hidden z-50">
     {menuOpen ? (
       <svg
         className="h-8 w-8 text-gray-700 transition-transform transform rotate-90"
@@ -83,12 +88,10 @@ const MenuToggle = ({ onClick, menuOpen }) => (
 );
 
 const ContactUs = ({ mobile = false }) => (
-  <div className={`flex items-center gap-6 ${mobile ? 'mt-8 lg:mt-0' : 'hidden lg:flex md:hidden'} ${!mobile && 'lg:flex hidden md:hidden '}`}>
-    <button className="bg-[#071835] text-white px-5 py-2 rounded-full hover:bg-[#87acec] ">Contact US</button>
+  <div className={`flex items-center gap-6 ${mobile ? 'lg:mt-0 lg:hidden' : 'hidden lg:flex md:hidden'}`}>
+    <button className="bg-[#071835] text-white px-5 py-2 rounded-full hover:bg-[#142035]">Contact US</button>
   </div>
 );
 
 export default Header;
-
-
 
