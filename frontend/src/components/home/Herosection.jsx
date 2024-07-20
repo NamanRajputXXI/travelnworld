@@ -2,7 +2,7 @@ import React from "react";
 
 const Herosection = () => {
   return (
-    <div
+<div
       className="  w-full h-fit bg-cover  bg-transparent bg-center  relative " 
       style={{ backgroundImage: "url('../assets/goa.jpg')" }} 
     >
@@ -17,7 +17,7 @@ const Herosection = () => {
             </div>
             <div>
               <div className="max-w-lg mx-auto p-6   rounded-lg   backdrop:blur-md border bg-transparent border-white/20 bg-white/30 backdrop-blur-lg shadow-md">
-                <h2 className="text-2xl font-bold mb-6 text-blue-900 dark:text-white">
+                    <h2 className="text-2xl font-bold mb-6 text-blue-900 dark:text-white">
                   Tell us what you are looking for!
                 </h2>
                 <form className="bg-transparent py-5  rounded-lg   ">

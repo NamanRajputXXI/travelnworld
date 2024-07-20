@@ -49,7 +49,7 @@ const NavLinks = ({ menuOpen }) => (
 
 const NavLink = ({ href, text }) => (
   <li>
-    <a className="hover:text-[#eb6734]" href={href}>{text}</a>
+    <a className="hover:text-[#eb6734] text-lg" href={href}>{text}</a>
   </li>
 );
 
