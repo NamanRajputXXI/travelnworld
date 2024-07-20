@@ -110,7 +110,7 @@ const OurTravelAgents = () => {
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full absolute md:top-[140px] top-[110px] -left-[20px] z-[100] border flex justify-center  items-center  bg-[#01055b] shadow-xl p-5  transition  hover:text-white"
+            className="rounded-full absolute md:top-[140px] top-[110px] -left-[10px] z-[100] border flex justify-center  items-center  bg-[#01055b] shadow-xl p-4  transition  hover:text-white"
           >
             <svg
               aria-hidden="true"
@@ -127,7 +127,7 @@ const OurTravelAgents = () => {
           <button
             aria-label="Next slide"
             onClick={handleNextSlide}
-            className="rounded-full border absolute -right-[20px] md:top-[140px] top-[110px] z-[100]  bg-[#01055b] shadow-xl p-5 flex justify-center items-center  transition  hover:text-white"
+            className="rounded-full border absolute -right-[10px] md:top-[140px] top-[110px] z-[100]  bg-[#01055b] shadow-xl p-4 flex justify-center items-center  transition  hover:text-white"
           >
             <svg
               aria-hidden="true"

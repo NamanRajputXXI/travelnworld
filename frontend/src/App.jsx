@@ -8,6 +8,7 @@ import VerifiedHotel from "./components/home/VerifiedHotel";
 import VerifiedTransport from "./components/home/VerifiedTransport";
 import FreeRegisteredTravelAgents from "./components/home/FreeRegisteredTravelAgents";
 import BlogSection from "./components/home/BlogSection";
+import Testimonial from "./components/home/Testimonial";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <VerifiedHotel />
       <DomesticTopTourPackage />
       <BlogSection />
+      <Testimonial />
     </>
   );
 };

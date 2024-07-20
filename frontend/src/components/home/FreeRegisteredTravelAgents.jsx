@@ -110,26 +110,24 @@ const FreeRegisteredTravelAgents = () => {
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full absolute md:top-[120px] top-[110px] -left-[20px] z-[100] border flex justify-center  items-center  bg-[#01055b] shadow-xl p-5  transition  hover:text-white"
+            className="rounded-full absolute md:top-[120px] top-[110px] -left-[10px] z-[100] border flex justify-center  items-center  bg-[#01055b] shadow-xl p-4  transition  hover:text-white"
           >
-            <span className="inline-block h-5 w-5">
-              <svg
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                className="text-white h-6 w-6" // Apply 'text-black' class directly here
-              >
-                <path
-                  fill="currentColor"
-                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                />
-              </svg>
-            </span>
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              className="text-white w-6 h-6" // Apply 'text-black' class directly here
+            >
+              <path
+                fill="currentColor"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
           </button>
           <button
             aria-label="Next slide"
             onClick={handleNextSlide}
-            className="rounded-full border absolute -right-[20px] md:top-[120px] top-[110px] z-[100] bg-[#01055b] p-5 flex justify-center items-center  transition  hover:text-white"
+            className="rounded-full border absolute -right-[10px] md:top-[120px] top-[110px] z-[100] bg-[#01055b] p-4 flex justify-center items-center  transition  hover:text-white"
           >
             <svg
               aria-hidden="true"
