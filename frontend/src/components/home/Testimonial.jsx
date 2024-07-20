@@ -6,39 +6,20 @@ import { FaQuoteRight, FaUserAlt } from "react-icons/fa";
 const Testimonial = () => {
   const testimonialData = [
     {
-      review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      name: "Ramesh",
+      review: "Fantastic service! Highly recommend to everyone.",
+      name: "Ravi Kumar",
     },
     {
-      review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      name: "Suresh",
+      review: "A wonderful experience from start to finish.",
+      name: "Priya Sharma",
     },
     {
-      review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      name: "Mahesh",
+      review: "Professional and friendly staff. Great trip",
+      name: "Anita Mehta",
     },
     {
-      review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      name: "Jignesh",
-    },
-    {
-      review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      name: "Dinesh",
-    },
-    {
-      review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      name: "Rajesh",
-    },
-    {
-      review:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      name: "Kamlesh",
+      review: "Exceeded all my expectations. Will book again!",
+      name: "Rajesh Gupta",
     },
   ];
 

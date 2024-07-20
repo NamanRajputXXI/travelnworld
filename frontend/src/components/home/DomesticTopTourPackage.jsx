@@ -9,36 +9,52 @@ const DomesticTopTourPackage = () => {
     {
       imageUrl: `https://cdn.pixabay.com/photo/2017/02/16/11/33/klong-prao-beach-2071238_640.jpg`,
       title: "Andaman",
+      description:
+        "Explore the pristine beaches and crystal-clear waters of Andaman.",
     },
     {
       imageUrl: `https://cdn.pixabay.com/photo/2022/09/19/20/17/pony-7466390_640.jpg`,
       title: "Kashmir",
+      description:
+        "Experience the breathtaking beauty and serenity of Kashmir.",
     },
     {
       imageUrl: `https://cdn.pixabay.com/photo/2018/04/22/18/19/caravan-3341872_640.jpg`,
       title: "Rajasthan",
+      description:
+        "Discover the rich cultural heritage and majestic palaces of Rajasthan.",
     },
     {
       imageUrl: `https://cdn.pixabay.com/photo/2017/05/30/05/46/goa-2355883_640.jpg`,
       title: "Goa",
+      description: "Enjoy the vibrant nightlife and stunning beaches of Goa.",
     },
     {
       imageUrl: `https://cdn.pixabay.com/photo/2021/09/13/08/59/lake-6620689_640.jpg`,
       title: "Himachal",
+      description:
+        "Immerse yourself in the natural beauty and adventure activities in Himachal.",
     },
     {
       imageUrl: `https://cdn.pixabay.com/photo/2020/08/16/07/59/uttarakhand-5492099_640.jpg`,
       title: "Uttarakhand",
+      description:
+        "Explore the scenic landscapes and spiritual retreats in Uttarakhand.",
     },
     {
       imageUrl: `https://cdn.pixabay.com/photo/2016/03/27/17/26/water-1283199_640.jpg`,
       title: "Kerala",
+      description:
+        "Experience the tranquil backwaters and lush greenery of Kerala.",
     },
     {
       imageUrl: `https://cdn.pixabay.com/photo/2017/06/13/07/22/gate-of-india-2397838_640.jpg`,
       title: "Mumbai",
+      description:
+        "Discover the bustling city life and iconic landmarks of Mumbai.",
     },
   ];
+
   const sliderContainer = useRef(null);
   const keenSlider = useRef(null);
 
@@ -94,7 +110,7 @@ const DomesticTopTourPackage = () => {
             <button
               aria-label="Previous slide"
               onClick={handlePrevSlide}
-              className="rounded-full bg-[#01055b] p-4 text-white  "
+              className="rounded-full bg-[#01055b] p-4 text-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +126,7 @@ const DomesticTopTourPackage = () => {
             <button
               aria-label="Next slide"
               onClick={handleNextSlide}
-              className="rounded-full bg-[#01055b] p-4 text-white "
+              className="rounded-full bg-[#01055b] p-4 text-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,10 +157,9 @@ const DomesticTopTourPackage = () => {
                     {item.title}
                   </h3>
                   <p className="text-white text-sm leading-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Velit, quaerat.
+                    {item.description}
                   </p>
-                  <button className="bg-white rounded-lg py-2 px-4 text-[#01055b] font-semibold ">
+                  <button className="bg-white rounded-lg py-2 px-4 text-[#01055b] font-semibold">
                     Contact
                   </button>
                 </div>
@@ -157,7 +172,7 @@ const DomesticTopTourPackage = () => {
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full bg-[#01055b] p-4 text-white "
+            className="rounded-full bg-[#01055b] p-4 text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +188,7 @@ const DomesticTopTourPackage = () => {
           <button
             aria-label="Next slide"
             onClick={handleNextSlide}
-            className="rounded-full bg-[#01055b] p-4 text-white "
+            className="rounded-full bg-[#01055b] p-4 text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
