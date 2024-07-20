@@ -49,7 +49,6 @@ const WeddingCarouselTop = () => {
 
     return () => clearInterval(interval); // Clear interval on component unmount
   }, [slides.length]);
-
   return (
     <div className="relative md:mb-20 mb:10 overflow-hidden w-full h-56">
       <div
@@ -70,8 +69,10 @@ const WeddingCarouselTop = () => {
               className="lg:w-[600px] w-[400px] p-5 bg-violet-950 text-white
             flex flex-col lg:gap-5 gap-3 justify-center"
             >
-              <p className="lg:text-xl text-base">{slide.companyName}</p>
-              <p className="lg:text-3xl text-xl">{slide.title}</p>
+              <p className="lg:text-xl text-sm  sm:text-base">
+                {slide.companyName}
+              </p>
+              <p className="lg:text-3xl text-base md:text-xl">{slide.title}</p>
               <p className="p-2 bg-white rounded-xl text-black lg:w-40 w-24 lg:text-base text-sm flex items-center justify-center">
                 Know more
               </p>

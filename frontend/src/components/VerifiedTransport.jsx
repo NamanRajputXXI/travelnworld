@@ -103,7 +103,7 @@ const VerifiedTransport = () => {
     <section className="">
       <div className="mx-auto relative max-w-[1340px] px-4 md:py-20 py-10 sm:px-6    lg:ps-8 ">
         <div className="max-w-7xl sm:px-8 items-end justify-center sm:flex sm:pe-6 lg:pe-8">
-          <h1 className="text-center text-[#01055b]  md:text-5xl text-2xl  ">
+          <h1 className="text-center text-[#01055b] md:text-5xl text-3xl font-bold mb-4 sm:mb-0 ">
             Verified Transports
           </h1>
         </div>
@@ -111,14 +111,14 @@ const VerifiedTransport = () => {
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full absolute md:top-[170px] top-[210px] -left-[20px] z-[100] border flex justify-center  items-center  bg-gray-200 shadow-xl p-5  transition  hover:text-white"
+            className="rounded-full absolute md:top-[170px] top-[210px] -left-[20px] z-[100]  flex justify-center  items-center  bg-[#01055b] shadow-xl p-5  transition  "
           >
             <span className="inline-block h-5 w-5">
               <svg
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
-                className="text-black" // Apply 'text-black' class directly here
+                className="text-white" // Apply 'text-black' class directly here
               >
                 <path
                   fill="currentColor"
@@ -130,14 +130,14 @@ const VerifiedTransport = () => {
           <button
             aria-label="Next slide"
             onClick={handleNextSlide}
-            className="rounded-full border absolute -right-[20px] md:top-[170px] top-[210px] z-[100]  bg-gray-200 shadow-xl p-5 flex justify-center items-center  transition  hover:text-white"
+            className="rounded-full  absolute -right-[20px] md:top-[170px] top-[210px] z-[100]  bg-[#01055b] shadow-xl p-5 flex justify-center items-center  transition  "
           >
             <span className="inline-block h-5 w-5">
               <svg
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
-                className="text-black" // Change this class to 'text-black'
+                className="text-white" // Change this class to 'text-black'
               >
                 <path
                   fill="currentColor"
@@ -183,44 +183,39 @@ const VerifiedTransport = () => {
             ))}
           </div>
         </div>
-        <div className="mt-8 items-center justify-center sm:hidden flex gap-4 lg:mt-0">
+
+        <div className="flex sm:hidden justify-center gap-4 mt-8">
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full border flex justify-center  items-center bg-gray-200  p-5 shadow-xl transition  hover:text-white"
+            className="rounded-full bg-[#01055b] p-4 text-white "
           >
-            <span className="inline-block h-5 w-5">
-              <svg
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                className="text-black" // Apply 'text-black' class directly here
-              >
-                <path
-                  fill="currentColor"
-                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                />
-              </svg>
-            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              className="w-6 h-6"
+            >
+              <path
+                fill="currentColor"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
           </button>
           <button
             aria-label="Next slide"
             onClick={handleNextSlide}
-            className="rounded-full border   bg-gray-200  p-5 shadow-xl  flex justify-center items-center t transition  hover:text-white"
+            className="rounded-full bg-[#01055b] p-4 text-white "
           >
-            <span className="inline-block h-5 w-5">
-              <svg
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                className="text-black" // Change this class to 'text-black'
-              >
-                <path
-                  fill="currentColor"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              className="w-6 h-6"
+            >
+              <path
+                fill="currentColor"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
           </button>
         </div>
       </div>

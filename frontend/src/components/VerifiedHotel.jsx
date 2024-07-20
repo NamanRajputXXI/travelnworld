@@ -3,7 +3,7 @@ import React from "react";
 const VerifiedHotel = () => {
   return (
     <div className="w-full md:my-20 flex flex-col gap-10 py-10 my-10 bg-gradient-to-br from-red-100 via-white to-gray-200 h-fit px-5  ">
-      <h1 className="text-center text-[#01055b]  md:text-5xl text-2xl ">
+      <h1 className="text-center text-[#01055b] md:text-5xl text-3xl font-bold mb-4 sm:mb-0">
         Verified Hotels
       </h1>
       <div className="grid max-w-7xl gap-5 mx-auto sm:grid-cols-3 grid-cols-2 lg:grid-cols-5 place-content-center">

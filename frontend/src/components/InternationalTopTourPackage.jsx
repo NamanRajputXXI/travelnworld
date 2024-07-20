@@ -87,19 +87,19 @@ const InternationalTopTourPackage = () => {
     <section className="py-10 md:py-20">
       <div className="mx-auto max-w-[1340px] px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between mb-8 sm:mb-16">
-          <h1 className="text-center text-[#01055b]  md:text-5xl text-2xl  ">
+          <h2 className="text-center text-[#01055b] md:text-5xl text-3xl font-bold mb-4 sm:mb-0">
             Top International Tour Package
-          </h1>
+          </h2>
           <div className="hidden sm:flex gap-4">
             <button
               aria-label="Previous slide"
               onClick={handlePrevSlide}
-              className="rounded-full bg-gray-200 p-5 hover:bg-gray-300 transition-colors duration-300"
+              className="rounded-full bg-[#01055b] p-4 text-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
-                className="w-5 h-5 text-black"
+                className="w-6 h-6"
               >
                 <path
                   fill="currentColor"
@@ -110,12 +110,12 @@ const InternationalTopTourPackage = () => {
             <button
               aria-label="Next slide"
               onClick={handleNextSlide}
-              className="rounded-full bg-gray-200 p-5 hover:bg-gray-300 transition-colors duration-300"
+              className="rounded-full bg-[#01055b] p-4 text-white "
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
-                className="w-5 h-5 text-black"
+                className="w-6 h-6"
               >
                 <path
                   fill="currentColor"
@@ -129,7 +129,7 @@ const InternationalTopTourPackage = () => {
         <div ref={sliderContainer} className="keen-slider">
           {internationalTopTourPackageData.map((item, i) => (
             <div key={i} className="keen-slider__slide">
-              <div className="relative w-full h-96 rounded-xl overflow-hidden">
+              <div className="relative w-full md:h-[480px] h-96 rounded-xl overflow-hidden">
                 <img
                   src={item.imageUrl}
                   alt={item.title}
@@ -140,11 +140,11 @@ const InternationalTopTourPackage = () => {
                   <h3 className="text-white text-2xl font-semibold">
                     {item.title}
                   </h3>
-                  <p className="text-white leading-4">
+                  <p className="text-white text-sm leading-6">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Tenetur, eius?
+                    Velit, quaerat.
                   </p>
-                  <button className="bg-white rounded-lg p-2 w-40 text-black ">
+                  <button className="bg-white rounded-lg py-2 px-4 text-[#01055b] font-semibold">
                     Contact
                   </button>
                 </div>
@@ -157,12 +157,12 @@ const InternationalTopTourPackage = () => {
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full bg-gray-200 p-5 text-black  transition-colors duration-300"
+            className="rounded-full bg-[#01055b] p-4 text-white "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
-              className="w-5 h-5"
+              className="w-6 h-6"
             >
               <path
                 fill="currentColor"
@@ -173,12 +173,12 @@ const InternationalTopTourPackage = () => {
           <button
             aria-label="Next slide"
             onClick={handleNextSlide}
-            className="rounded-full bg-gray-200 p-5 text-black transition-colors duration-300"
+            className="rounded-full bg-[#01055b] p-4 text-white "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
-              className="w-5 h-5"
+              className="w-6 h-6"
             >
               <path
                 fill="currentColor"
