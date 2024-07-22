@@ -141,8 +141,7 @@ const FreeRegisteredTravelAgents = () => {
                         <h1 className="text-xl font-bold">{item.name}</h1>
                         <p>
                           <span className="font-semibold text-xl">
-                            {" "}
-                            Mobile -{" "}
+                            Mobile -
                           </span>
                           {item.phone}
                         </p>
