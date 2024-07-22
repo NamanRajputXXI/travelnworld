@@ -9,7 +9,7 @@ const BlogSection = () => {
         "https://cdn.pixabay.com/photo/2016/06/11/15/23/phuket-1450270_640.jpg",
       title: "Exploring the Andaman Islands",
       description:
-        "Discover pristine beaches and vibrant marine life in this tropical paradise.",
+        "Discover pristine beaches and vibrant marine life in this tropical paradise.   ",
     },
     {
       imageUrl:
