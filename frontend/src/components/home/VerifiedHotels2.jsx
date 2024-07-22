@@ -1,9 +1,8 @@
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import VerifiedHotel2 from "./VerifiedHotels2";
 
-const VerifiedHotel = () => {
+const VerifiedHotel2 = () => {
   const hotelsData = [
     {
       id: 1,
@@ -86,30 +85,24 @@ const VerifiedHotel = () => {
       },
     },
     created(s) {
-      s.moveToIdx(5, true, animation);
+      s.moveToIdx(s.track.details.abs - 5, true, animation);
     },
     updated(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation);
+      s.moveToIdx(s.track.details.abs - 5, true, animation);
     },
     animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation);
+      s.moveToIdx(s.track.details.abs - 5, true, animation);
     },
   });
 
   return (
     <section>
-      <div className="mx-auto max-w-7xl px-8  sm:px-6 md:pt-20 pt-10">
-        <div className="max-w-7xl items-center justify-center sm:flex sm:pe-6 lg:pe-8">
-          <h1 className="text-center text-[#01055b] md:text-5xl text-3xl font-bold mb-4 sm:mb-0">
-            Verified Hotels
-          </h1>
-        </div>
-
+      <div className="mx-auto max-w-7xl md:pb-20 pb-10 px-8 sm:px-6">
         <div className="sm:mt-16 mt-4 lg:col-span-2 px-2 lg:mx-0">
           <div ref={sliderRef} className="keen-slider">
-            {hotelsData.map((item, i) => (
+            {hotelsData.map((item) => (
               <div
-                className="keen-slider__slide h-48 w-24 flex items-center "
+                className="keen-slider__slide h-48 w-24 flex items-center"
                 key={item.id}
               >
                 <img
@@ -122,9 +115,8 @@ const VerifiedHotel = () => {
           </div>
         </div>
       </div>
-      <VerifiedHotel2 />
     </section>
   );
 };
 
-export default VerifiedHotel;
+export default VerifiedHotel2;
