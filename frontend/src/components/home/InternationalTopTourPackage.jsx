@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect, useRef } from "react";
 import KeenSlider from "keen-slider";
 import "keen-slider/keen-slider.min.css";
