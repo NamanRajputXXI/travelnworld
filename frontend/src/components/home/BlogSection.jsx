@@ -158,7 +158,7 @@ const BlogSection = () => {
         <div ref={sliderContainer} className="keen-slider">
           {BlogData.map((item, i) => (
             <div key={i} className="keen-slider__slide">
-              <div className="relative w-full md:h-[480px] h-96 rounded-xl overflow-hidden shadow-lg">
+              <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg">
                 <img
                   src={item.imageUrl}
                   alt={item.title}
