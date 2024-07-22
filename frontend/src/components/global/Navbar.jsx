@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,13 +11,11 @@ const Navbar = () => {
     <header className="bg-white p-5 relative z-50 w-full">
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
         <div className="z-50">
-          <Link to="/">
-            <img
-              className="w-16 cursor-pointer"
-              src="/Images/Homepageimages/logo.png"
-              alt="Logo"
-            />
-          </Link>
+          <img
+            className="w-16 cursor-pointer"
+            src="/Images/Homepageimages/logo.png"
+            alt="Logo"
+          />
         </div>
 
         <div
@@ -33,55 +30,16 @@ const Navbar = () => {
                 : "hidden lg:flex"
             }`}
           >
-            <li>
-              <NavLink className="hover:text-[#eb6734] text-lg" to="/">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="hover:text-[#eb6734] text-lg" to="/about">
-                About us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="hover:text-[#eb6734] text-lg" to="/packages">
-                Packages
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className="hover:text-[#eb6734] text-lg"
-                to="/destination"
-              >
-                Destination
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="hover:text-[#eb6734] text-lg" to="/b2b-login">
-                B2B LOGIN
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="hover:text-[#eb6734] text-lg" to="/blogs">
-                Blogs
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className="hover:text-[#eb6734] text-lg"
-                to="/testimonials"
-              >
-                Testimonials
-              </NavLink>
-            </li>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Packages</li>
+            <li>Destination</li>
+            <li>B2B LOGIN</li>
+            <li>Blogs</li>
+            <li>Testimonials</li>
             {menuOpen && (
               <div className="flex items-center gap-6 lg:hidden">
-                <Link
-                  to="/contact"
-                  className="bg-[#071835] text-white px-5 py-2 rounded-full hover:bg-[#142035]"
-                >
-                  Contact US
-                </Link>
+                Contact US
               </div>
             )}
           </ul>
@@ -122,14 +80,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <div className="hidden lg:flex items-center gap-6">
-          <Link
-            to="/contact"
-            className="bg-[#071835] text-white px-5 py-2 rounded-full hover:bg-[#142035]"
-          >
-            Contact US
-          </Link>
-        </div>
+        <div className="hidden lg:flex items-center gap-6">Contact US</div>
       </nav>
     </header>
   );
