@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ContactForm = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [service, setService] = useState('');
-  const [message, setMessage] = useState('');
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [service, setService] = useState("");
+  const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
 
   const validate = () => {
     const errors = {};
-    if (!firstName.trim()) errors.firstName = 'First name is required';
-    if (!lastName.trim()) errors.lastName = 'Last name is required';
+    if (!firstName.trim()) errors.firstName = "First name is required";
+    if (!lastName.trim()) errors.lastName = "Last name is required";
     if (!email.trim()) {
-      errors.email = 'Email is required';
+      errors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      errors.email = 'Email is invalid';
+      errors.email = "Email is invalid";
     }
-    if (!service.trim()) errors.service = 'Service is required';
-    if (!message.trim()) errors.message = 'Message is required';
+    if (!service.trim()) errors.service = "Service is required";
+    if (!message.trim()) errors.message = "Message is required";
     return errors;
   };
 
@@ -29,11 +29,11 @@ const ContactForm = () => {
       // Form is valid, proceed with form submission
       console.log({ firstName, lastName, email, service, message });
       // Reset form fields
-      setFirstName('');
-      setLastName('');
-      setEmail('');
-      setService('');
-      setMessage('');
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setService("");
+      setMessage("");
       setErrors({});
     } else {
       // Set validation errors
@@ -44,10 +44,10 @@ const ContactForm = () => {
   return (
     <section className="bg-white dark:bg-gray-900 ">
       <div className="lg:py-16 h-auto max-w-7xl py-20 px-4 lg:px-8 mx-auto gap-5">
-        <h2 className="mb-4 text-2xl tracking-tight font-bold text-center text-gray-900 dark:text-white">
-          Contact Us
-        </h2>
-        <h1 className="text-5xl font-bold text-center">Let's talk about<br /> your project</h1>
+        <h1 className="text-5xl font-bold text-center">
+          Let's talk about
+          <br /> your project
+        </h1>
         <p className="lg:mb-16 pt-10 text-center font-extrabold text-gray-500 dark:text-gray-500 sm:text-xl">
           Drop us a line through the form below and we'll get back to you
         </p>
@@ -57,62 +57,82 @@ const ContactForm = () => {
               <input
                 type="text"
                 id="first-name"
-                className={`shadow-sm bg-gray-50 border ${errors.firstName ? 'border-red-500' : 'border-gray-300'} text-gray-900 text-sm rounded-lg f-500 block w-full p-2.5`}
+                className={`shadow-sm bg-gray-50 border ${
+                  errors.firstName ? "border-red-500" : "border-gray-300"
+                } text-gray-900 text-sm rounded-lg f-500 block w-full p-2.5`}
                 placeholder="First name"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 required
               />
-              {errors.firstName && <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>}
+              {errors.firstName && (
+                <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>
+              )}
             </div>
             <div>
               <input
                 type="text"
                 id="last-name"
-                className={`shadow-sm bg-gray-50 border ${errors.lastName ? 'border-red-500' : 'border-gray-300'} text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white  dark:shadow-sm-light`}
+                className={`shadow-sm bg-gray-50 border ${
+                  errors.lastName ? "border-red-500" : "border-gray-300"
+                } text-gray-900 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white  dark:shadow-sm-light`}
                 placeholder="Last name"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 required
               />
-              {errors.lastName && <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>}
+              {errors.lastName && (
+                <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>
+              )}
             </div>
             <div>
               <input
                 type="email"
                 id="email"
-                className={`shadow-sm bg-gray-50 border ${errors.email ? 'border-red-500' : 'border-gray-300'} text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white `}
+                className={`shadow-sm bg-gray-50 border ${
+                  errors.email ? "border-red-500" : "border-gray-300"
+                } text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white `}
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
-              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+              )}
             </div>
             <div>
               <input
                 type="text"
                 id="service"
-                className={`block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border ${errors.service ? 'border-red-500' : 'border-gray-300'} shadow-sm   dark:shadow-sm-light`}
+                className={`block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border ${
+                  errors.service ? "border-red-500" : "border-gray-300"
+                } shadow-sm   dark:shadow-sm-light`}
                 placeholder="Service"
                 value={service}
                 onChange={(e) => setService(e.target.value)}
                 required
               />
-              {errors.service && <p className="text-red-500 text-sm mt-1">{errors.service}</p>}
+              {errors.service && (
+                <p className="text-red-500 text-sm mt-1">{errors.service}</p>
+              )}
             </div>
           </div>
           <div className="sm:col-span-2">
             <textarea
               id="message"
               rows="6"
-              className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border ${errors.message ? 'border-red-500' : 'border-gray-300'}     `}
+              className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border ${
+                errors.message ? "border-red-500" : "border-gray-300"
+              }     `}
               placeholder="Leave a comment..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
             ></textarea>
-            {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+            )}
           </div>
           <button
             type="submit"
