@@ -98,22 +98,22 @@ const VerifiedHotel = () => {
 
   return (
     <section>
-      <div className="mx-auto max-w-7xl px-8  sm:px-6 md:pt-20 pt-10">
+      <div className="mx-auto max-w-7xl px-5  md:pt-20 pt-10">
         <div className="max-w-7xl items-center justify-center sm:flex sm:pe-6 lg:pe-8">
           <h1 className="text-center text-[#01055b] md:text-5xl text-3xl font-bold mb-4 sm:mb-0">
             Verified Hotels
           </h1>
         </div>
 
-        <div className="sm:mt-16 mt-4 lg:col-span-2 px-2 lg:mx-0">
+        <div className="sm:mt-16 mt-4 lg:col-span-2  lg:mx-0">
           <div ref={sliderRef} className="keen-slider">
             {hotelsData.map((item, i) => (
               <div
-                className="keen-slider__slide h-48 w-24 flex items-center "
+                className="keen-slider__slide sm:h-28 h-20 w-24 flex items-center "
                 key={item.id}
               >
                 <img
-                  className="mx-auto mb-6 w-full max-h-full max-w-full dark:shadow-black/20"
+                  className="mx-auto  w-full max-h-full max-w-full dark:shadow-black/20"
                   src={item.imageUrl}
                   alt="avatar"
                 />
