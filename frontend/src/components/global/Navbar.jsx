@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,8 +9,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-white px-5 py-5 relative  z-50 w-full ">
-      <nav className="flex justify-between items-center max-w-7xl mx-auto  ">
+    <header className="bg-white px-5 py-5 relative z-50 w-full ">
+      <nav className="flex justify-between items-center max-w-7xl mx-auto">
         <Logo />
         <NavLinks menuOpen={menuOpen} />
         <MenuToggle onClick={onToggleMenu} menuOpen={menuOpen} />
@@ -31,34 +32,35 @@ const Logo = () => (
 
 const NavLinks = ({ menuOpen }) => (
   <div
-    className={`nav-links duration-500 lg:static absolute bg-white lg:min-h-fit  left-0 z-40 ${
+    className={`nav-links duration-500 lg:static absolute bg-white lg:min-h-fit left-0 z-40 ${
       menuOpen ? "top-[60px]" : "top-[-500%]"
     } lg:w-auto w-full flex items-center px-5 lg:px-0`}
   >
     <ul
-      className={`flex font-medium  py-5 lg:flex-row flex-col lg:items-center gap-5 w-full lg:w-auto ${
+      className={`flex font-medium py-5 lg:flex-row flex-col lg:items-center gap-5 w-full lg:w-auto ${
         menuOpen
           ? "flex flex-col items-center justify-center"
           : "hidden lg:flex"
       }`}
     >
-      <NavLink href="#" text="Home" />
-      <NavLink href="#" text="About us" />
-      <NavLink href="#" text="Packages" />
-      <NavLink href="#" text="Destination" />
-      <NavLink href="#" text="B2B LOGIN" />
-      <NavLink href="#" text="Blogs" />
-      <NavLink href="#" text="Testimonials" />
+      <NavLink to="/" text="Home" />
+      <NavLink to="/about" text="About us" />
+      <NavLink to="/contact" text="Contact" />
+      <NavLink to="#" text="Packages" />
+      <NavLink to="#" text="Destination" />
+      <NavLink to="#" text="B2B LOGIN" />
+      <NavLink to="#" text="Blogs" />
+      <NavLink to="#" text="Testimonials" />
       {menuOpen && <ContactUs mobile />}
     </ul>
   </div>
 );
 
-const NavLink = ({ href, text }) => (
+const NavLink = ({ to, text }) => (
   <li>
-    <a className="hover:text-[#eb6734] text-lg" href={href}>
+    <Link className="hover:text-[#eb6734] text-lg" to={to}>
       {text}
-    </a>
+    </Link>
   </li>
 );
 
@@ -102,9 +104,12 @@ const ContactUs = ({ mobile = false }) => (
       mobile ? "lg:mt-0 lg:hidden" : "hidden lg:flex md:hidden"
     }`}
   >
-    <button className="bg-[#071835] text-white px-5 py-2 rounded-full hover:bg-[#142035]">
+    <Link
+      to="/contact"
+      className="bg-[#071835] text-white px-5 py-2 rounded-full hover:bg-[#142035]"
+    >
       Contact US
-    </button>
+    </Link>
   </div>
 );
 
