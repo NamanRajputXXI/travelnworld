@@ -160,17 +160,21 @@ const FreeRegisteredTravelAgents = () => {
                 <div className="keen-slider__slide" key={i}>
                   <div className="flex border-[1px] p-5 border-gray-600 rounded-lg relative w-full sm:w-auto">
                     <div className="flex sm:flex-row flex-col-reverse sm:justify-start justify-center sm:items-start items-center">
-                      <div className="flex gap-2 sm:justify-start justify-center sm:items-start items-center flex-col">
+                      <div className="flex gap-5 sm:justify-start justify-center sm:items-start items-center flex-col">
                         <h1 className="text-xl font-bold">{item.name}</h1>
-                        <p>
+                        <p className="">
                           <span className="font-semibold text-xl">
                             Mobile -
                           </span>
-                          <span className="absolute bg-red-500 w-full"></span>
+                          <span className="absolute h-7 mt-1 w-14 blur-sm backdrop:blur-sm  bg-gray-500 "></span>
+
                           {item.phone}
                         </p>
-                        <p>
-                          <span className="font-semibold text-xl">Email -</span>
+                        <p className="flex items-center">
+                          <span className="font-semibold text-xl">
+                            Email -{" "}
+                          </span>
+                          <span className="absolute h-7 left-24 mt-1 w-32 blur-sm backdrop:blur-sm  bg-gray-500 "></span>
                           {item.email}
                         </p>
                         <button className="w-40 p-2 flex items-center justify-center text-white rounded-lg bg-[#01055b]">
