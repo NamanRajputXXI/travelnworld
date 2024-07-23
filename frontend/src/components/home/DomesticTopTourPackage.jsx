@@ -143,7 +143,7 @@ const DomesticTopTourPackage = () => {
         <div ref={sliderContainer} className="keen-slider">
           {internationalTopTourPackageData.map((item, i) => (
             <div key={i} className="keen-slider__slide">
-              <div className="relative w-full md:h-[480px] h-96 rounded-xl overflow-hidden">
+              <div className="relative w-full  h-96 rounded-xl overflow-hidden">
                 <img
                   src={item.imageUrl}
                   alt={item.title}

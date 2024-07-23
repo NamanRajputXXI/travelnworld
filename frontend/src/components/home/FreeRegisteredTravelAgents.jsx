@@ -5,36 +5,59 @@ const FreeRegisteredTravelAgents = () => {
   // Destinations Data
   const ourTravelAgents = [
     {
-      name: "RR TOUR AND TRAVELS",
-      phone: "6304234227",
+      name: "WANDERLUST TRAVEL WORLD",
+      phone: "7407300991",
+      email: "wanderlusttravelworld@gmail.com",
     },
     {
-      name: "FINNA TRAVELS",
-      phone: "7006457689",
+      name: "RR TOURS AND TRAVELS",
+      phone: "6304234227",
+      email: "ravirajendar24@gmail.com",
     },
     {
       name: "FINNA TRAVEL",
       phone: "7006457689",
+      email: "finnatravels@gmail.com",
+    },
+    {
+      name: "BHARAT ECAB",
+      phone: "8882906451",
+      email: "bharatecab00@gmail.com",
+    },
+    {
+      name: "TRIP BOUQUET",
+      phone: "7303193848",
+      email: "support@tripbouquet.com",
     },
     {
       name: "TRAWELL.IN",
       phone: "7799591230",
+      email: "trawell.in@gmail.com",
     },
     {
-      name: "RR TOUR AND TRAVELS",
-      phone: "6304234227",
+      name: "QUGO",
+      phone: "7411940703",
+      email: "bhalltravels@gmail.com",
     },
     {
-      name: "FINNA TRAVELS",
-      phone: "7006457689",
+      name: "BHALLA TRAVELS",
+      phone: "7678223408",
+      email: "bhallatravels@gmail.com",
     },
     {
-      name: "FINNA TRAVEL",
-      phone: "7006457689",
+      name: "CUTE VOYAGES",
+      phone: "8121202999",
+      email: "sales@cutevoyages.in",
     },
     {
-      name: "TRAWELL.IN",
-      phone: "7799591230",
+      name: "HOLIDAY TRIP ADVISOR",
+      phone: "8197200830",
+      email: "info@holidaytripadvisor.in",
+    },
+    {
+      name: "TRIP TO SKY PVT LTD",
+      phone: "8374837460",
+      email: "care@trip2sky.com",
     },
   ];
 
@@ -91,63 +114,68 @@ const FreeRegisteredTravelAgents = () => {
   return (
     <section className="">
       <div className="mx-auto relative max-w-[1340px] px-4 md:py-20 py-10 sm:px-6    lg:ps-8 ">
-        <div className="max-w-7xl sm:px-8 items-end justify-center sm:flex sm:pe-6 lg:pe-8">
-          <h1 className="text-center text-[#01055b] md:text-5xl text-3xl font-bold mb-4 sm:mb-0 ">
+        <div className="flex flex-col sm:flex-row items-center justify-between ">
+          <h2 className="text-center text-[#01055b] md:text-5xl text-3xl font-bold mb-4 sm:mb-0">
             Registered Travel Agents
-          </h1>
-        </div>
-        <div className="mt-8 relative max-w-7xl sm:flex hidden gap-4 lg:mt-0">
-          <button
-            aria-label="Previous slide"
-            onClick={handlePrevSlide}
-            className="rounded-full absolute md:top-[120px] top-[110px] -left-[10px] z-[100] border flex justify-center  items-center  bg-[#01055b] shadow-xl p-4  transition  hover:text-white"
-          >
-            <svg
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
-              className="text-white w-6 h-6" // Apply 'text-black' class directly here
+          </h2>
+          <div className="hidden sm:flex gap-4">
+            <button
+              aria-label="Previous slide"
+              onClick={handlePrevSlide}
+              className="rounded-full bg-[#01055b] p-4 text-white"
             >
-              <path
-                fill="currentColor"
-                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-              />
-            </svg>
-          </button>
-          <button
-            aria-label="Next slide"
-            onClick={handleNextSlide}
-            className="rounded-full border absolute -right-[10px] md:top-[120px] top-[110px] z-[100] bg-[#01055b] p-4 flex justify-center items-center  transition  hover:text-white"
-          >
-            <svg
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
-              className="text-white w-6 h-6" // Change this class to 'text-black'
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                className="w-6 h-6"
+              >
+                <path
+                  fill="currentColor"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Next slide"
+              onClick={handleNextSlide}
+              className="rounded-full bg-[#01055b] p-4 text-white"
             >
-              <path
-                fill="currentColor"
-                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                className="w-6 h-6"
+              >
+                <path
+                  fill="currentColor"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-
-        <div className=" sm:mt-16 relative mt-8 lg:col-span-2 sm:px-8  px-3 lg:mx-0">
+        <div className=" sm:mt-16 relative mt-8 lg:col-span-2 lg:mx-0">
           <div ref={sliderContainer} className="keen-slider">
             {ourTravelAgents.map((item, i) => (
               <div key={i}>
                 <div className="keen-slider__slide" key={i}>
                   <div className="flex border-[1px] p-5 border-gray-600 rounded-lg relative w-full sm:w-auto">
                     <div className="flex sm:flex-row flex-col-reverse sm:justify-start justify-center sm:items-start items-center">
-                      <div className="flex gap-2 sm:justify-start justify-center sm:items-start items-center flex-col">
+                      <div className="flex gap-5 sm:justify-start justify-center sm:items-start items-center flex-col">
                         <h1 className="text-xl font-bold">{item.name}</h1>
-                        <p>
+                        <p className="">
                           <span className="font-semibold text-xl">
-                            {" "}
-                            Mobile -{" "}
+                            Mobile -
                           </span>
+                          <span className="absolute h-7 mt-1 w-14 blur-sm backdrop:blur-sm  bg-gray-500 "></span>
+
                           {item.phone}
+                        </p>
+                        <p className="flex items-center">
+                          <span className="font-semibold text-xl">
+                            Email -{" "}
+                          </span>
+                          <span className="absolute h-7 left-24 mt-1 w-32 blur-sm backdrop:blur-sm  bg-gray-500 "></span>
+                          {item.email}
                         </p>
                         <button className="w-40 p-2 flex items-center justify-center text-white rounded-lg bg-[#01055b]">
                           Contact
@@ -165,7 +193,7 @@ const FreeRegisteredTravelAgents = () => {
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full bg-[#01055b] p-4 text-white "
+            className="rounded-full bg-[#01055b] p-4 text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
