@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-white p-5 relative  z-50 w-full ">
+    <header className="bg-white px-5 py-5 relative  z-50 w-full ">
       <nav className="flex justify-between items-center max-w-7xl mx-auto  ">
         <Logo />
         <NavLinks menuOpen={menuOpen} />
@@ -31,7 +31,7 @@ const Logo = () => (
 
 const NavLinks = ({ menuOpen }) => (
   <div
-    className={`nav-links duration-500 lg:static absolute bg-white lg:min-h-fit min-h-[60vh] left-0 z-40 ${
+    className={`nav-links duration-500 lg:static absolute bg-white lg:min-h-fit  left-0 z-40 ${
       menuOpen ? "top-[60px]" : "top-[-500%]"
     } lg:w-auto w-full flex items-center px-5 lg:px-0`}
   >

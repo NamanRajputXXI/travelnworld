@@ -18,12 +18,12 @@ import React from "react";
 // import TeamSection from "./components/about/TeamSection";
 // import PricingSection from "./components/about/PricingSection";
 // import OurClients from "./components/about/OurClients";
-import Aboutnewsection from "./components/about/Aboutherosection.jsx";
+import About from "./Pages/About.jsx"
 const App = () => {
   return (
     <>
 
-<Aboutnewsection/>
+<About/>
 
       {/* <Navbar /> */}
       {/* <About/>

@@ -37,7 +37,7 @@ const TeamSection = () => {
                 <div className="text-gray-700 font-light mb-2">
                   Founder & Specialist
                 </div>
-                <div className="flex space-x-6">
+                <div className="flex space-x-2">
                   <div className="p-2 bg-white rounded-full flex items-center justify-center">
                     <a href="#!" className="text-[#4267B2]">
                       <FaFacebookF className="h-6 w-6" />
@@ -76,7 +76,7 @@ const TeamSection = () => {
                 <div className="text-gray-700 font-light mb-2">
                   Tired & M. Specialist
                 </div>
-                <div className="flex space-x-6">
+                <div className="flex space-x-2">
                   <div className="p-2 bg-white rounded-full flex items-center justify-center">
                     <a href="#!" className="text-[#4267B2]">
                       <FaFacebookF className="h-6 w-6" />
@@ -113,7 +113,7 @@ const TeamSection = () => {
                   Kenji Milton
                 </h1>
                 <div className="text-gray-700 font-light mb-2">Team Member</div>
-                <div className="flex space-x-6">
+                <div className="flex space-x-2">
                   <div className="p-2 bg-white rounded-full flex items-center justify-center">
                     <a href="#!" className="text-[#4267B2]">
                       <FaFacebookF className="h-6 w-6" />
@@ -152,7 +152,7 @@ const TeamSection = () => {
                 <div className="text-gray-700 font-light mb-2">
                   Will be fired
                 </div>
-                <div className="flex space-x-6">
+                <div className="flex space-x-2">
                   <div className="p-2 bg-white rounded-full flex items-center justify-center">
                     <a href="#!" className="text-[#4267B2]">
                       <FaFacebookF className="h-6 w-6" />

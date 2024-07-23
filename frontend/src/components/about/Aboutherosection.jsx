@@ -1,17 +1,11 @@
 import React from "react";
-import Navbar from "../global/Navbar";
-import Footer from "../global/Footer";
-import OurClients from "./OurClients";
-import TeamSection from "./TeamSection";
-import PricingSection from "./PricingSection";
-import AboutUs from "../../Pages/About";
+
 const Aboutherosection = () => {
   return (
     <>
-      <Navbar />
-      <section className="flex flex-col lg:flex-row items-center h-fit max-w-7xl py-20  px-5  mx-auto bg-white">
-        <div className="flex flex-col lg:flex-row lg:items-start items-center  xl:justify-between lg:justify-between w-full gap-8">
-          <div className="mt-8 lg:w-1/2 w-full text-center lg:text-left pt-5">
+        <section className="flex flex-col lg:flex-row items-center h-fit max-w-7xl md:pb-20 py-10  px-5  mx-auto bg-white">
+        <div className="flex flex-col lg:flex-row  items-center  xl:justify-between lg:justify-between w-full gap-8">
+          <div className=" lg:w-1/2 w-full text-center lg:text-left pt-5">
             <h1 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-4">
               We Provide Digital Solutions for Your Business
             </h1>
@@ -34,18 +28,13 @@ const Aboutherosection = () => {
           <div className="relative bg-cover md:w-1/2 w-full  rounded-2xl   mt-8 lg:mt-5">
             <img
               src="/Images/Homepageimages/about.png"
-              className=" md:h-[550px] object-cover w-full sm:h-[450px] h-[300px] rounded-[100px] "
+              className=" md:h-[500px] object-cover w-full sm:h-[400px] h-[300px] rounded-[100px] "
               alt="About us"
             />
           </div>
         </div>
       </section>
 
-      <TeamSection />
-      <AboutUs />
-      <OurClients />
-      <PricingSection />
-      <Footer />
     </>
   );
 };
