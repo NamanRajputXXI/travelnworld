@@ -5,36 +5,59 @@ const FreeRegisteredTravelAgents = () => {
   // Destinations Data
   const ourTravelAgents = [
     {
-      name: "RR TOUR AND TRAVELS",
-      phone: "6304234227",
+      name: "WANDERLUST TRAVEL WORLD",
+      phone: "7407300991",
+      email: "wanderlusttravelworld@gmail.com",
     },
     {
-      name: "FINNA TRAVELS",
-      phone: "7006457689",
+      name: "RR TOURS AND TRAVELS",
+      phone: "6304234227",
+      email: "ravirajendar24@gmail.com",
     },
     {
       name: "FINNA TRAVEL",
       phone: "7006457689",
+      email: "finnatravels@gmail.com",
+    },
+    {
+      name: "BHARAT ECAB",
+      phone: "8882906451",
+      email: "bharatecab00@gmail.com",
+    },
+    {
+      name: "TRIP BOUQUET",
+      phone: "7303193848",
+      email: "support@tripbouquet.com",
     },
     {
       name: "TRAWELL.IN",
       phone: "7799591230",
+      email: "trawell.in@gmail.com",
     },
     {
-      name: "RR TOUR AND TRAVELS",
-      phone: "6304234227",
+      name: "QUGO",
+      phone: "7411940703",
+      email: "bhalltravels@gmail.com",
     },
     {
-      name: "FINNA TRAVELS",
-      phone: "7006457689",
+      name: "BHALLA TRAVELS",
+      phone: "7678223408",
+      email: "bhallatravels@gmail.com",
     },
     {
-      name: "FINNA TRAVEL",
-      phone: "7006457689",
+      name: "CUTE VOYAGES",
+      phone: "8121202999",
+      email: "sales@cutevoyages.in",
     },
     {
-      name: "TRAWELL.IN",
-      phone: "7799591230",
+      name: "HOLIDAY TRIP ADVISOR",
+      phone: "8197200830",
+      email: "info@holidaytripadvisor.in",
+    },
+    {
+      name: "TRIP TO SKY PVT LTD",
+      phone: "8374837460",
+      email: "care@trip2sky.com",
     },
   ];
 
@@ -143,7 +166,12 @@ const FreeRegisteredTravelAgents = () => {
                           <span className="font-semibold text-xl">
                             Mobile -
                           </span>
+                          <span className="absolute bg-red-500 w-full"></span>
                           {item.phone}
+                        </p>
+                        <p>
+                          <span className="font-semibold text-xl">Email -</span>
+                          {item.email}
                         </p>
                         <button className="w-40 p-2 flex items-center justify-center text-white rounded-lg bg-[#01055b]">
                           Contact
@@ -161,7 +189,7 @@ const FreeRegisteredTravelAgents = () => {
           <button
             aria-label="Previous slide"
             onClick={handlePrevSlide}
-            className="rounded-full bg-[#01055b] p-4 text-white "
+            className="rounded-full bg-[#01055b] p-4 text-white"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
