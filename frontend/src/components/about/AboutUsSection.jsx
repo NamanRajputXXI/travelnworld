@@ -16,15 +16,10 @@ const AboutUsSection = () => {
               About Us
             </span>
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-4">
-              We Provide Digital Solutions for Your Business
+            Explore the World with TravelnWorld
             </h2>
-            <p className="text-gray-800 text-base lg:text-lg leading-7 tracking-wide mb-6 ">
-              Soluta illum facere consequuntur magni. Ullam dolorem repudiandae
-              cumque voluptate consequatur consectetur, eos provident
-              necessitatibus reiciendis corrupti! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Unde quam explicabo labore maiores
-              odio veniam maxime eveniet voluptatibus. Quasi, numquam ad magni
-              quo explicabo odit repellendus iusto perferendis minus.
+            <p className="text-gray-400 text-base lg:text-lg leading-7 tracking-wide mb-6 ">
+            At TravelnWorld, we are passionate about helping you create unforgettable travel experiences. Whether you're seeking adventure, relaxation, or cultural immersion, our expert guides, personalized itineraries, and travel tips will make your journey seamless and memorable.  At TravelnWorld, we are passionate about helping you create unforgettable travel experiences. Whether you're seeking adventure, relaxation, or cultural immersion, our expert guides, personalized itineraries, and travel tips will make your journey seamless and memorable.
             </p>
             <div className="mt-12 w-full sm:gap-0 gap-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3  ">
               <div className="flex flex-col gap-3 justify-center items-center text-center">

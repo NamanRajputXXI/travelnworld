@@ -7,17 +7,14 @@ const Aboutherosection = () => {
         <div className="flex flex-col lg:flex-row  items-center  xl:justify-between lg:justify-between w-full gap-8">
           <div className=" lg:w-1/2 w-full text-center lg:text-left pt-5">
             <h1 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-4">
-              We Provide Digital Solutions for Your Business
+            Explore the World with TravelnWorld
             </h1>
             <p className="text-gray-400 text-base lg:text-lg  mb-6">
-              Soluta illum facere consequuntur magni. Ullam dolorem repudiandae
-              cumque voluptate consequatur consectetur, eos provident
-              necessitatibus reiciendis corrupti! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Unde quam explicabo labore
+            At TravelnWorld, we are passionate about helping you create unforgettable travel experiences. Whether you're seeking adventure, relaxation, or cultural immersion, our expert guides, personalized itineraries, and travel tips will make your journey seamless and memorable.  At TravelnWorld, we are passionate about helping you create unforgettable travel experiences. Whether you're seeking adventure, relaxation, or cultural immersion, our expert guides, personalized itineraries, and travel tips will make your journey seamless and memorable.
             </p>
             <div className="flex flex-col sm:flex-row lg:justify-start  md:justify-center sm:justify-center gap-3">
               <button className="bg-black text-white px-5 py-2 hover:bg-[#142035]">
-                Get Started
+              Start Your Journey
               </button>
               <button className="bg-transparent text-black border border-black px-5 py-2 hover:bg-gray-200">
                 How It Works
@@ -40,3 +37,6 @@ const Aboutherosection = () => {
 };
 
 export default Aboutherosection;
+
+
+
