@@ -55,11 +55,14 @@ const SignInForm = () => {
   };
 
   return (
-    <div className="">
+    <div className="px-5">
       <div className="min-h-screen flex  flex-col items-center md:w-full sm:w-full ">
-        <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-4 m w-full  flex-col  justify-between sm:w-full  max-w-7xl  mx-auto o md:py-20  py-10 px-5 ">
-          <div className="border border-gray-300 rounded-lg p-6 w-full mx-auto md:mx-0">
-            <form className="space-y-4  w-full  md:w-full sm:w-full" onSubmit={handleSubmit}>
+        <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-4 m w-full  flex-col  justify-between sm:w-full  max-w-7xl  mx-auto o md:py-20  py-10 ">
+          <div className="border border-gray-300 rounded-lg p-5 w-full mx-auto md:mx-0">
+            <form
+              className="space-y-4  w-full  md:w-full sm:w-full"
+              onSubmit={handleSubmit}
+            >
               <div className="mb-8">
                 <h3 className="text-[#01055b] text-3xl font-extrabold">
                   Sign in
