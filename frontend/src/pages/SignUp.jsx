@@ -1,17 +1,16 @@
 import React from 'react'
-import SignInForm from '../components/SignIn-SignUp/SignInForm'
+import SignUpForm from '../components/SignIn-SignUp/SignUpForm'
 import Navbar from '../components/global/Navbar'
 import Footer from '../components/global/Footer'
 
 
-const SignIn = () => {
-  return (
-    <>
+const SignUp= () => {
+  return (<>
     <Navbar/>
-    <SignInForm/>
+    <SignUpForm/>
     <Footer/>
     </>
   )
 }
 
-export default SignIn
+export default SignUp
