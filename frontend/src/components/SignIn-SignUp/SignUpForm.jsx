@@ -230,7 +230,7 @@ const SignUpForm = () => {
         </div>
         <div className="lg:h-[400px] md:h-[300px] mt-8 md:mt-0 w-full">
           <img
-            src="Images/Signin-signup/signin.jpg"
+            src="Images/Signin-signup/signin.png"
             className="w-full h-full max-md:w-4/5 mx-auto block object-cover"
             alt="Sign Up"
           />
