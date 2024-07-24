@@ -17,6 +17,7 @@ import Testimonial from "./components/home/Testimonial";
 const App = () => {
   return (
     <>
+    
       <Navbar />
       <WeddingCarouselTop />
       <Herosection />
