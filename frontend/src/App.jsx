@@ -13,17 +13,11 @@ import VerifiedTransport from "./components/home/VerifiedTransport";
 import FreeRegisteredTravelAgents from "./components/home/FreeRegisteredTravelAgents";
 import BlogSection from "./components/home/BlogSection";
 import Testimonial from "./components/home/Testimonial";
-import About from "./Pages/About";
-import TeamSection from "./components/about/TeamSection";
-import PricingSection from "./components/about/PricingSection";
-import OurClients from "./components/about/OurClients";
+
 const App = () => {
   return (
     <>
-
-
-
-       <Navbar /> 
+      <Navbar />
       <WeddingCarouselTop />
       <Herosection />
       <Client />
