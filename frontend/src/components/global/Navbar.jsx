@@ -9,7 +9,6 @@ const Navbar = () => {
   };
 
   return (
-
     <header className="bg-white px-5 py-5 relative z-50 w-full ">
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
         <Logo />
@@ -33,7 +32,6 @@ const Logo = () => (
 
 const NavLinks = ({ menuOpen }) => (
   <div
-
     className={`nav-links duration-500 lg:static absolute bg-white lg:min-h-fit left-0 z-40 ${
       menuOpen ? "top-[60px]" : "top-[-500%]"
     } lg:w-auto w-full flex items-center px-5 lg:px-0`}
@@ -48,11 +46,11 @@ const NavLinks = ({ menuOpen }) => (
       <NavLink to="/" text="Home" />
       <NavLink to="/about" text="About us" />
       <NavLink to="/contact" text="Contact" />
-      <NavLink to="packages" text="Packages" />
-      <NavLink to="destination" text="Destination" />
-      <NavLink to="b2blogin" text="B2B LOGIN" />
-      <NavLink to="blogs" text="Blogs" />
-      <NavLink to="testimonials" text="Testimonials" />
+      <NavLink to="/packages" text="Packages" />
+      <NavLink to="/destination" text="Destination" />
+      <NavLink to="/b2blogin" text="B2B LOGIN" />
+      <NavLink to="/blogs" text="Blogs" />
+      <NavLink to="/testimonials" text="Testimonials" />
       {menuOpen && <ContactUs mobile />}
     </ul>
   </div>
