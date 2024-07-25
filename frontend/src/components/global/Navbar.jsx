@@ -48,7 +48,6 @@ const NavLinks = ({ menuOpen }) => (
       <NavLink to="/about" text="About us" />
       <NavLink to="/contact" text="Contact" />
       <NavLink to="/packages" text="Packages" />
-      <NavLink to="/b2blogin" text="B2B LOGIN" />
       <NavLink to="/blogs" text="Blogs" />
       {menuOpen && <ContactUs mobile />}
     </ul>
