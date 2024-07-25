@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaUser, FaLock } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SignUpForm = () => {
   const [formData, setFormData] = useState({
@@ -76,19 +76,23 @@ const SignUpForm = () => {
   };
 
   return (
-    <div className="min-h-screen px-5 flex flex-col items-center w-full">
-      <div className="grid md:grid-cols-2 items-center gap-4 w-full justify-between max-w-7xl mx-auto md:py-20 py-10 ">
-        <div className="border border-gray-300 rounded-lg p-5 w-full  mx-auto md:mx-0">
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            <div className="mb-8 w-full  md:w-full sm:w-full">
-              <h3 className="text-[#01055b] text-3xl font-extrabold">
-                Sign up
-              </h3>
-              <p className="text-gray-500 text-sm mt-4 leading-relaxed">
-                Sign up for a new account and explore a world of possibilities.
-                Your journey begins here.
-              </p>
-            </div>
+    //
+              <div className="min-h-screen flex  flex-col items-center justify-center md:w-full sm:w-full ">
+        <div className="grid md:grid-cols-2 grid-cols-1 items-center   justify-center gap-4 m w-full  flex-col  sm:w-full  max-w-7xl  mx-auto o md:py-20  py-10 ">
+          <div className="border border-gray-300 rounded-lg p-5 w-full mx-auto md:mx-0">
+            <form
+              className="space-y-4  w-full  md:w-full sm:w-full"
+              onSubmit={handleSubmit}
+            >
+              <div className="mb-8">
+                <h3 className="text-[#01055b] text-3xl font-extrabold">
+                  Sign up
+                </h3>
+                <p className="text-gray-500 text-sm mt-4 leading-relaxed">
+                  Sign up to your account and explore a world of possibilities.
+                  Your journey begins here.
+                </p>
+              </div>
 
             <div>
               <label className="text-gray-800 text-sm mb-2 block">Name</label>
@@ -104,7 +108,7 @@ const SignUpForm = () => {
                   } px-4 py-3 rounded-lg outline-[#01055b]`}
                   placeholder="Enter your name"
                 />
-                <FaUser className="w-[18px] h-[18px] absolute right-4 text-gray-400" />
+                
               </div>
               {errors.name && (
                 <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -125,7 +129,7 @@ const SignUpForm = () => {
                   } px-4 py-3 rounded-lg outline-[#01055b]`}
                   placeholder="Enter your email"
                 />
-                <FaUser className="w-[18px] h-[18px] absolute right-4 text-gray-400" />
+            
               </div>
               {errors.email && (
                 <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -148,7 +152,7 @@ const SignUpForm = () => {
                   } px-4 py-3 rounded-lg outline-[#01055b]`}
                   placeholder="Enter your password"
                 />
-                <FaLock className="w-[18px] h-[18px] absolute right-4 text-gray-400 cursor-pointer" />
+
               </div>
               {errors.password && (
                 <p className="text-red-500 text-sm mt-1">{errors.password}</p>
@@ -173,7 +177,7 @@ const SignUpForm = () => {
                   } px-4 py-3 rounded-lg outline-[#01055b]`}
                   placeholder="Confirm your password"
                 />
-                <FaLock className="w-[18px] h-[18px] absolute right-4 text-gray-400 cursor-pointer" />
+       
               </div>
               {errors.confirmPassword && (
                 <p className="text-red-500 text-sm mt-1">
@@ -219,12 +223,12 @@ const SignUpForm = () => {
 
             <p className="text-sm mt-8 text-center text-gray-800">
               Already have an account?{" "}
-              <a
-                href="/signin"
+              <Link
+                to ="/B2BLogin"
                 className="text-[#01055b] font-semibold hover:underline ml-1 whitespace-nowrap"
               >
                 Log in here
-              </a>
+              </Link>
             </p>
           </form>
         </div>

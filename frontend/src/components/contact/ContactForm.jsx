@@ -103,13 +103,13 @@ const ContactForm = () => {
             </div>
             <div>
               <input
-                type="text"
-                id="service"
+                type="number"
+                id="phone"
                 className={`block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border ${
                   errors.service ? "border-red-500" : "border-gray-300"
                 } shadow-sm   dark:shadow-sm-light`}
-                placeholder="Service"
-                value={service}
+                placeholder=" Phone number"
+                value={Number}
                 onChange={(e) => setService(e.target.value)}
                 required
               />

@@ -8,7 +8,7 @@ const PricingSection = () => {
           <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
           Choose a plan That Fits 
           <br/>
-         <h1 className='flex flex-col gap-3'>Your Requirments</h1> 
+          <span className='flex flex-col gap-3'>Your Requirments,</span>
           </h1>
          
         </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header className="bg-white px-5 py-3 relative z-50 w-full">
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
-        <Logo />
+       <Link to="/"> <Logo /></Link>
         <NavLinks menuOpen={menuOpen} />
         <MenuToggle onClick={onToggleMenu} menuOpen={menuOpen} />
         <ContactUs menuOpen={menuOpen} />
@@ -45,7 +45,7 @@ const NavLinks = ({ menuOpen }) => (
       }`}
     >
       <NavLink to="/" text="Home" />
-      <NavLink to="/about" text="About us" />
+      <NavLink to="/about" text="About" />
       <NavLink to="/contact" text="Contact" />
       <NavLink to="/packages" text="Packages" />
       <NavLink to="/blogs" text="Blogs" />
