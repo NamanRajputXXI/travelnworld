@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { CiUser } from "react-icons/ci";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-white px-5 py-5 relative z-50 w-full ">
+    <header className="bg-white px-5 py-3 relative z-50 w-full">
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
         <Logo />
         <NavLinks menuOpen={menuOpen} />
@@ -23,7 +24,7 @@ const Navbar = () => {
 const Logo = () => (
   <div className="z-50">
     <img
-      className="w-16 cursor-pointer"
+      className="w-20 cursor-pointer"
       src="/Images/Homepageimages/logo.png"
       alt="Logo"
     />
@@ -32,12 +33,12 @@ const Logo = () => (
 
 const NavLinks = ({ menuOpen }) => (
   <div
-    className={`nav-links duration-500 lg:static absolute bg-white lg:min-h-fit left-0 z-40 ${
+    className={`nav-links duration-300 lg:static absolute bg-white lg:min-h-fit left-0 z-40 ${
       menuOpen ? "top-[60px]" : "top-[-500%]"
     } lg:w-auto w-full flex items-center px-5 lg:px-0`}
   >
     <ul
-      className={`flex font-medium py-5 lg:flex-row flex-col lg:items-center gap-5 w-full lg:w-auto ${
+      className={`flex font-medium py-3 lg:flex-row flex-col lg:items-center gap-10 w-full lg:w-auto ${
         menuOpen
           ? "flex flex-col items-center justify-center"
           : "hidden lg:flex"
@@ -47,10 +48,8 @@ const NavLinks = ({ menuOpen }) => (
       <NavLink to="/about" text="About us" />
       <NavLink to="/contact" text="Contact" />
       <NavLink to="/packages" text="Packages" />
-      <NavLink to="/destination" text="Destination" />
       <NavLink to="/b2blogin" text="B2B LOGIN" />
       <NavLink to="/blogs" text="Blogs" />
-      <NavLink to="/testimonials" text="Testimonials" />
       {menuOpen && <ContactUs mobile />}
     </ul>
   </div>
@@ -58,17 +57,17 @@ const NavLinks = ({ menuOpen }) => (
 
 const NavLink = ({ to, text }) => (
   <li>
-    <Link className="hover:text-[#eb6734] text-lg" to={to}>
+    <Link className="hover:text-[#eb6734] text-base font-semibold" to={to}>
       {text}
     </Link>
   </li>
 );
 
 const MenuToggle = ({ onClick, menuOpen }) => (
-  <div onClick={onClick} className="text-3xl cursor-pointer lg:hidden z-50">
+  <div onClick={onClick} className="text-2xl cursor-pointer lg:hidden z-50">
     {menuOpen ? (
       <svg
-        className="h-8 w-8 text-gray-700 transition-transform transform rotate-90"
+        className="h-6 w-6 text-gray-700 transition-transform transform rotate-90"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -82,7 +81,7 @@ const MenuToggle = ({ onClick, menuOpen }) => (
       </svg>
     ) : (
       <svg
-        className="h-8 w-8 text-gray-700 transition-transform transform rotate-0"
+        className="h-6 w-6 text-gray-700 transition-transform transform rotate-0"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -105,10 +104,11 @@ const ContactUs = ({ mobile = false }) => (
     }`}
   >
     <Link
-      to="/contact"
-      className="bg-[#071835] text-white px-5 py-2 rounded-full hover:bg-[#142035]"
+      to="/B2BLogin"
+      className="bg-[#071835] flex items-center gap-1 justify-center  text-white px-4 py-2 rounded-xl hover:bg-[#142035] text-xl "
     >
-      Contact US
+      <CiUser color="white " size={20} />
+      Login
     </Link>
   </div>
 );
