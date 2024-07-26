@@ -10,6 +10,7 @@ import SignUp from "./pages/SignUp.jsx";
 import Blogs from "./pages/Blogs.jsx";
 import Packages from "./pages/Packages.jsx";
 import Testimonials from "./pages/Testimonials.jsx";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/packages" element={<Packages />} />
           <Route path="/testimonails" element={<Testimonials />} />
+          <Route path="/privacyPolicy" element={<PrivacyPolicyPage/>} />
         </Routes>
       </div>
     </BrowserRouter>
