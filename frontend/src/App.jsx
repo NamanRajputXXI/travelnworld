@@ -13,12 +13,14 @@ import VerifiedTransport from "./components/home/VerifiedTransport";
 import FreeRegisteredTravelAgents from "./components/home/FreeRegisteredTravelAgents";
 import BlogSection from "./components/home/BlogSection";
 import Testimonial from "./components/home/Testimonial";
-// import AdditionalPages from "./components/privacyPolicy/PrivacyPolicy";
+
+
 
 const App = () => {
   return (
     <>
-    {/* <AdditionalPages/> */}
+
+   
       <Navbar />
       <WeddingCarouselTop />
       <Herosection />

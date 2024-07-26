@@ -17,9 +17,9 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#!" className="text-white dark:text-neutral-200">
+                  <Link to ="/terms" className="text-white dark:text-neutral-200">
                     Terms of Use
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
