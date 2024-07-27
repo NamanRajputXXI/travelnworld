@@ -7,7 +7,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import SignIn from "./pages/SignIn.jsx";
 import SignUp from "./pages/SignUp.jsx";
-import Blogs from "./pages/Blogs.jsx";
+import Blogs from "./pages/BlogsPage.jsx";
 import Packages from "./pages/Packages.jsx";
 import Testimonials from "./pages/Testimonials.jsx";
 
