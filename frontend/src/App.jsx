@@ -14,10 +14,13 @@ import FreeRegisteredTravelAgents from "./components/home/FreeRegisteredTravelAg
 import BlogSection from "./components/home/BlogSection";
 import Testimonial from "./components/home/Testimonial";
 
+
+
 const App = () => {
   return (
     <>
-    
+
+   
       <Navbar />
       <WeddingCarouselTop />
       <Herosection />
