@@ -5,7 +5,8 @@ import Footer from '../components/global/Footer'
 
 
 const SignUp= () => {
-  return (<>
+  return (
+  <>
     <Navbar/>
     <SignUpForm/>
     <Footer/>

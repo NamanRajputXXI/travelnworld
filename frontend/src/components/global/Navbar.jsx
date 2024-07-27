@@ -1,3 +1,6 @@
+
+
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CiUser } from "react-icons/ci";
@@ -12,7 +15,9 @@ const Navbar = () => {
   return (
     <header className="bg-white px-5 py-3 relative z-50 w-full">
       <nav className="flex justify-between items-center max-w-7xl mx-auto">
-       <Link to="/"> <Logo /></Link>
+        <Link to="/">
+          <Logo />
+        </Link>
         <NavLinks menuOpen={menuOpen} />
         <MenuToggle onClick={onToggleMenu} menuOpen={menuOpen} />
         <ContactUs menuOpen={menuOpen} />
@@ -47,20 +52,82 @@ const NavLinks = ({ menuOpen }) => (
       <NavLink to="/" text="Home" />
       <NavLink to="/about" text="About" />
       <NavLink to="/contact" text="Contact" />
-      <NavLink to="/packages" text="Packages" />
-      <NavLink to="/blogs" text="Blogs" />
+      <NavLinkWithDropdown text="Packages" >
+        <DropdownMenu items={dropdownItems} />
+      </NavLinkWithDropdown>
+      <NavLink to="/blogs" text="Blogs"  />
       {menuOpen && <ContactUs mobile />}
     </ul>
   </div>
 );
 
 const NavLink = ({ to, text }) => (
-  <li>
+  <li className="relative">
     <Link className="hover:text-[#eb6734] text-base font-semibold" to={to}>
       {text}
     </Link>
   </li>
 );
+
+const NavLinkWithDropdown = ({ text, children }) => (
+  <li className="relative group">
+    <span className="hover:text-[#eb6734] text-base font-semibold cursor-pointer">
+      {text}
+    </span>
+    {children}
+  </li>
+);
+;
+
+const DropdownMenu = ({ items }) => (
+  <div className="absolute z-[100]  lg:translate-x-[-30%]  translate-x-[-50%] px-2  md:px-3 -sm:px-5  md:right-8 sm:left-5 left-1/2 lg:left-6 sm:w-[470px] w-[95vw] bg-white  border border-gray-200  justify-evenly rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex   mr-4 mt-6 gap-4 sm:gap-6 p-4">
+    <div>
+      <h1 className="font-bold py-4">Indian Packages</h1>
+      <ul className="flex flex-col md:justify-center align-center">
+        {items.indian.map((item, index) => (
+          <li key={index}>
+            <Link to={item.to} className="block py-2 hover:bg-gray-100">
+              {item.text}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div>
+      <h1 className="font-bold py-4 ">International Packages</h1>
+      <ul className="flex flex-col ">
+        {items.international.map((item, index) => (
+          <li key={index}>
+            <Link to={item.to} className="block py-2 hover:bg-gray-100">
+              {item.text}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+);
+
+const dropdownItems = {
+  indian: [
+    { to: "/packages/package1", text: "Manali" },
+    { to: "/packages/package1", text: "Manali" },
+    { to: "/packages/package2", text: "Shimla" },
+    { to: "/packages/package3", text: "Kerala" },
+    { to: "/packages/package4", text: "Goa" },
+    { to: "/packages/package5", text: "Jaipur" },
+    { to: "/packages/package6", text: "Udaipur" },
+  ],
+  international: [
+    { to: "/packages/package7", text: "Switzerland" },
+    { to: "/packages/package8", text: "Paris" },
+    { to: "/packages/package9", text: "London" },
+    { to: "/packages/package10", text: "New York" },
+    { to: "/packages/package11", text: "Dubai" },
+    { to: "/packages/package12", text: "Singapore" },
+    { to: "/packages/package12", text: "Singapore" },
+  ],
+};
 
 const MenuToggle = ({ onClick, menuOpen }) => (
   <div onClick={onClick} className="text-2xl cursor-pointer lg:hidden z-50">
@@ -104,12 +171,14 @@ const ContactUs = ({ mobile = false }) => (
   >
     <Link
       to="/B2BLogin"
-      className="bg-[#071835] flex items-center gap-1 justify-center  text-white px-4 py-2 rounded-xl hover:bg-[#142035] text-xl "
+      className="bg-[#071835] flex items-center gap-1 justify-center text-white px-4 py-2 rounded-xl hover:bg-[#142035] text-xl"
     >
-      <CiUser color="white " size={20} />
+      <CiUser color="white" size={20} />
       Login
     </Link>
   </div>
 );
 
 export default Navbar;
+
+
