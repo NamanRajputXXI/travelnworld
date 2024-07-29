@@ -1,10 +1,11 @@
 import React from "react";
 import Blog from "./Blog";
-
+import { Link } from "react-router-dom";
+import { blogPosts } from "./blogPostsData";
 const Blogs = () => {
   return (
     <section className="w-full">
-      <div className="max-w-7xl mx-auto  py-10 px-5">
+      <div className="max-w-7xl mx-auto py-10 px-5">
         <div className="relative w-full">
           <div className="relative">
             <img
@@ -27,86 +28,46 @@ const Blogs = () => {
           </div>
         </div>
         <div className="flex flex-col gap-10 md:py-20 py-10">
-          <h2 className="t text-[#01055b] md:text-5xl text-3xl font-bold mb-4 sm:mb-0">
+          <h2 className=" text-[#01055b] md:text-5xl text-3xl font-bold mb-4 sm:mb-0">
             Latest Posts
           </h2>
-          <div className="grid md:grid-cols-2  lg:grid-cols-3  gap-5">
-            <div className="flex border border-gray-300 p-4 rounded-lg flex-col gap-5">
-              <img
-                src="https://cdn.pixabay.com/photo/2017/06/17/18/33/andaman-2413073_640.jpg"
-                alt=""
-                className="object-cover h-64 rounded-lg"
-              />
-              <div className="bg-blue-200 px-2 py-1 rounded-lg w-fit">
-                <p>Andaman</p>
-              </div>
-              <h1 className=" text-xl sm:text-2xl md:text-3xl font-medium">
-                The Impact of Technology on the Workplace : How technology is
-                changing
-              </h1>
-              <div className="flex items-center justify-between gap-2">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {blogPosts.map((post) => (
+              <Link
+                key={post.id}
+                to={`/blog/${post.id}`}
+                className="flex cursor-pointer border border-gray-300 p-4 rounded-lg flex-col gap-5 relative group"
+              >
                 <img
-                  src="https://cdn.pixabay.com/photo/2022/09/19/20/17/pony-7466390_640.jpg"
-                  className="object-cover rounded-full w-8 h-8"
+                  src={post.image}
                   alt=""
+                  className="object-cover h-64 rounded-lg"
                 />
-
-                <p>Andaman</p>
-                <p>August 20, 2022</p>
-              </div>
-            </div>
-            <div className="flex border border-gray-300 p-4 rounded-lg flex-col gap-5">
-              <img
-                src="https://cdn.pixabay.com/photo/2022/09/19/20/17/pony-7466390_640.jpg"
-                alt=""
-                className="object-cover rounded-lg  h-64"
-              />
-              <div className="bg-blue-200 px-2 py-1 rounded-lg w-fit">
-                <p>Kashmir</p>
-              </div>
-              <h1 className="text-3xl font-medium">
-                The Impact of Technology on the Workplace : How technology is
-                changing
-              </h1>
-              <div className="flex items-center justify-between gap-2">
-                <img
-                  src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
-                  className="object-cover rounded-full w-8 h-8"
-                  alt=""
-                />
-
-                <p>Srinagar</p>
-                <p>August 20, 2022</p>
-              </div>
-            </div>
-            <div className="flex border border-gray-300 p-4 rounded-lg flex-col gap-5">
-              <img
-                src="https://cdn.pixabay.com/photo/2021/04/06/11/22/hawa-mahal-6156123_640.jpg"
-                alt=""
-                className="object-cover  h-64 rounded-lg"
-              />
-              <div className="bg-blue-200 px-2 py-1 rounded-lg w-fit">
-                <p>Rajasthan</p>
-              </div>
-              <h1 className="text-3xl font-medium">
-                The Impact of Technology on the Workplace : How technology is
-                changing
-              </h1>
-              <div className="flex items-center justify-between gap-2">
-                <img
-                  src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg"
-                  className="object-cover rounded-full w-8 h-8"
-                  alt=""
-                />
-
-                <p>Rajasthan</p>
-                <p>August 20, 2022</p>
-              </div>
-            </div>
+                <div className="flex gap-3 items-center">
+                  <div className="bg-blue-200 px-2 py-1 rounded-lg w-fit">
+                    <p>{post.category}</p>
+                  </div>
+                  <div className="bg-blue-200 px-2 py-1 rounded-lg w-fit">
+                    <p>Read More</p>
+                  </div>
+                </div>
+                <h1 className="text-xl sm:text-2xl md:text-3xl font-medium">
+                  {post.title}
+                </h1>
+                <div className="flex items-center justify-between gap-2">
+                  <img
+                    src={post.authorImage}
+                    className="object-cover rounded-full w-8 h-8"
+                    alt=""
+                  />
+                  <p>{post.author}</p>
+                  <p>{post.date}</p>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
-      <Blog />
     </section>
   );
 };

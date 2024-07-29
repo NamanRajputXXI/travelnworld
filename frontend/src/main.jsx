@@ -9,7 +9,7 @@ import SignIn from "./pages/SignIn.jsx";
 import SignUp from "./pages/SignUp.jsx";
 import Blogs from "./pages/BlogsPage.jsx";
 import Packages from "./pages/Packages.jsx";
-import Testimonials from "./pages/Testimonials.jsx";
+import BlogPost from "./components/blogs/BlogPost.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/destination" element={<SignUp />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/packages" element={<Packages />} />
-          <Route path="/testimonails" element={<Testimonials />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
         </Routes>
       </div>
     </BrowserRouter>
