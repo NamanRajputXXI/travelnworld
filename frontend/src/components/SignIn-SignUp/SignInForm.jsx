@@ -68,7 +68,7 @@ const SignInForm = () => {
                   Sign in
                 </h3>
                 <p className="text-gray-500 text-sm mt-4 leading-relaxed">
-                  Sign in to your account and explore a world of possibilities.
+                  Sign in to your account  and 
                   Your journey begins here.
                 </p>
               </div>

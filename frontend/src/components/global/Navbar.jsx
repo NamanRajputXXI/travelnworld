@@ -1,6 +1,4 @@
 
-
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CiUser } from "react-icons/ci";
@@ -52,9 +50,9 @@ const NavLinks = ({ menuOpen }) => (
       <NavLink to="/" text="Home" />
       <NavLink to="/about" text="About" />
       <NavLink to="/contact" text="Contact" />
-      <NavLinkWithDropdown text="Packages" >
+     <Link to ="/TourPackages"><NavLinkWithDropdown text="Packages" >
         <DropdownMenu items={dropdownItems} />
-      </NavLinkWithDropdown>
+      </NavLinkWithDropdown></Link>
       <NavLink to="/blogs" text="Blogs"  />
       {menuOpen && <ContactUs mobile />}
     </ul>

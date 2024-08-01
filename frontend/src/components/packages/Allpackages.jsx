@@ -1,7 +1,3 @@
-
-
-
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaRegStar } from "react-icons/fa";
@@ -9,12 +5,7 @@ import { FaRegStar } from "react-icons/fa";
 const Allpackages = () => {
   return (
     <>
-      <div className="flex justify-center items-center py-4">
-        <h1 className="text-3xl font-bold px-5 py-10">
-          Home / <Link to="/packages">Packages</Link>
-        </h1>
-      </div>
-
+      <div className="flex justify-center items-center py-10 ">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto px-4">
         {[...Array(6)].map((_, index) => (
           <div key={index} className="flex flex-col gap-5 border p-4 rounded-md">
@@ -60,6 +51,9 @@ const Allpackages = () => {
           </div>
         ))}
       </div>
+      </div>
+
+      
     </>
   );
 };

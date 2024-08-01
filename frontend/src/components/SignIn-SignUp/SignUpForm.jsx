@@ -89,7 +89,7 @@ const SignUpForm = () => {
                   Sign up
                 </h3>
                 <p className="text-gray-500 text-sm mt-4 leading-relaxed">
-                  Sign up to your account and explore a world of possibilities.
+                  Sign up to your account and 
                   Your journey begins here.
                 </p>
               </div>

@@ -12,6 +12,9 @@ import Packages from "./pages/Packages.jsx";
 import Testimonials from "./pages/Testimonials.jsx";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
 import TermandconditionPage from "./pages/TermandconditionPage.jsx";
+import Allpackages from "./components/packages/Allpackages.jsx";
+import TourPackages from "./pages/TourPackages.jsx";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -23,10 +26,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/contact" element={<Contact />} />
           <Route path="/B2BLogin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/packages" element={<Packages />} />
+          <Route path="/TourPackages" element={<TourPackages />} />
           <Route path="/destination" element={<SignUp />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/packages" element={<Packages />} />
+      
           <Route path="/testimonails" element={<Testimonials />} />
           <Route path="/privacyPolicy" element={<PrivacyPolicyPage/>} />
           <Route path="/terms" element={<TermandconditionPage/>} />

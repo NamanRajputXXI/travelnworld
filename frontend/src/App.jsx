@@ -1,4 +1,6 @@
-import React from "react";
+
+import React, { useState, useEffect } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
 import Herosection from "./components/home/Herosection";
 import Client from "./components/home/Client";
 import Footer from "./components/global/Footer";
@@ -13,31 +15,49 @@ import VerifiedTransport from "./components/home/VerifiedTransport";
 import FreeRegisteredTravelAgents from "./components/home/FreeRegisteredTravelAgents";
 import BlogSection from "./components/home/BlogSection";
 import Testimonial from "./components/home/Testimonial";
-import Allpackages from "./components/packages/Allpackages";
-import Packagesbanner from "./components/packages/Packagesbanner";
+// import Allpackages from "./components/packages/Allpackages";
+// import Packagesbanner from "./components/packages/Packagesbanner";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); 
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-    <Packagesbanner/>
-<Allpackages/>
-      <Navbar />
-      <WeddingCarouselTop />
-      <Herosection />
-      <Client />
-      <OurTravelAgents />
-      <InternationalTopTourPackage />
-      <VerifiedHotel />
-      <DomesticTopTourPackage />
-      <VerifiedTransport />
-      <FreeRegisteredTravelAgents />
-      <InternationalTopTourPackage />
-      <VerifiedHotel />
-      <DomesticTopTourPackage />
-      <GrowBuisness />
-      <BlogSection />
-      <Testimonial />
-      <Footer />
+      {loading ? (
+        <div className="flex justify-center items-center min-h-screen">
+          <ClipLoader color="#123abc" loading={loading} size={50} />
+        </div>
+      ) : (
+        <>
+          {/* <Packagesbanner/>
+          <Allpackages/> */}
+          <Navbar />
+          <WeddingCarouselTop />
+          <Herosection />
+          <Client />
+          <OurTravelAgents />
+          <InternationalTopTourPackage />
+          <VerifiedHotel />
+          <DomesticTopTourPackage />
+          <VerifiedTransport />
+          <FreeRegisteredTravelAgents />
+          <InternationalTopTourPackage />
+          <VerifiedHotel />
+          <DomesticTopTourPackage />
+          <GrowBuisness />
+          <BlogSection />
+          <Testimonial />
+          <Footer />
+        </>
+      )}
     </>
   );
 };
