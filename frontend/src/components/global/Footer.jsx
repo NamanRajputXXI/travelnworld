@@ -1,6 +1,7 @@
+
 import React from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll"; 
 
 const Footer = () => {
   return (
@@ -12,18 +13,12 @@ const Footer = () => {
               <h6 className="mb-4 font-semibold uppercase">Policy</h6>
               <ul>
                 <li className="mb-4">
-                  <Link
-                    to="/privacyPolicy"
-                    className="text-white dark:text-neutral-200"
-                  >
+                  <Link to="/privacyPolicy" className="text-white dark:text-neutral-200">
                     Privacy Policy
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link
-                    to="/terms"
-                    className="text-white dark:text-neutral-200"
-                  >
+                  <Link to="/terms" className="text-white dark:text-neutral-200">
                     Terms of Use
                   </Link>
                 </li>
@@ -33,80 +28,77 @@ const Footer = () => {
               <h6 className="mb-4 font-semibold uppercase">Support</h6>
               <ul>
                 <li className="mb-4">
-                  <Link
-                    to="/contact"
-                    className="text-white dark:text-neutral-200"
-                  >
+                  <Link to="/contact" className="text-white dark:text-neutral-200">
                     Contact Us
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link  to="/about" className="text-white dark:text-neutral-200">
+                  <Link to="/about" className="text-white dark:text-neutral-200">
                     About us
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="flex flex-col lg:justify-normal lg:items-start  items-center">
+          <div className="flex flex-col lg:justify-normal lg:items-start items-center">
             <h6 className="mb-4 font-semibold uppercase">Quick Links</h6>
-            <ul className="flex flex-col lg:justify-normal lg:items-start  items-center">
+            <ul className="flex flex-col lg:justify-normal lg:items-start items-center">
               <li className="mb-4">
                 <a href="/" className="text-white dark:text-neutral-200">
                   Home
                 </a>
               </li>
               <li className="mb-4">
-                <Link to="#!" className="text-white dark:text-neutral-200">
+                <Link to="international" smooth={true} duration={500} className="text-white dark:text-neutral-200 cursor-pointer">
                   Trending Destination
                 </Link>
               </li>
               <li className="mb-4">
-                <Link to="/TourPackages" className="text-white dark:text-neutral-200">
+                <Link to="/TourPackages" className="text-white dark:text-neutral-200 cursor-pointer">
                  Packages
                 </Link>
               </li>
               <li>
-                <Link to="#!" className="text-white dark:text-neutral-200">
+                <Link to="domestic" smooth={true} duration={500} className="text-white dark:text-neutral-200 cursor-pointer">
                   Domestic Destination
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-10 lg:justify-normal lg:items-start  items-center">
-            <div className="'flex flex-col lg:justify-normal lg:items-start  items-center">
+          <div className="flex flex-col gap-10 lg:justify-normal lg:items-start items-center">
+            <div className="flex flex-col lg:justify-normal lg:items-start items-center">
               <h6 className="mb-4 font-semibold uppercase">Follow Us On</h6>
               <div className="flex space-x-6">
                 <div className="p-2 bg-white rounded-full flex items-center justify-center">
-                  <Link
-                    to="https://www.facebook.com/profile.php?id=100091741043983&mibextid=ZbWKwL"
-                    className="text-[#4267B2]  "
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100091741043983&mibextid=ZbWKwL"
+                    className="text-[#4267B2]"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaFacebookF className="h-6 w-6" />
-                  </Link>
+                  </a>
                 </div>
-
                 <div className="p-2 bg-white rounded-full flex items-center justify-center">
-                  <Link
-                    to="https://www.instagram.com/travelnworld_official/"
+                  <a
+                    href="https://www.instagram.com/travelnworld_official/"
                     className="text-[#E1306C]"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaInstagram className="h-6 w-6" />
-                  </Link>
+                  </a>
                 </div>
                 <div className="p-2 bg-white rounded-full flex items-center justify-center">
-                  <Link to="#!" className="text-[#E1306C]">
-                    <FaYoutube className="h-6 w-6" />
-                  </Link>
+                  <FaYoutube className="h-6 w-6" />
                 </div>
               </div>
             </div>
-            <div className="flex flex-col lg:justify-normal lg:items-start  items-center">
+            <div className="flex flex-col lg:justify-normal lg:items-start items-center">
               <h5 className="uppercase mb-4">Sign up</h5>
               <p className="mb-4">
-              Start your journey with TravelnWorld. Sign up to explore exclusive travel deals.</p>
+                Start your journey with TravelnWorld. Sign up to explore exclusive travel deals.
+              </p>
               <div className="form-outline w-full mb-4 flex flex-col md:flex-row gap-2">
                 <input
                   type="email"

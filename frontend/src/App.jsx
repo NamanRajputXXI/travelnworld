@@ -15,8 +15,6 @@ import VerifiedTransport from "./components/home/VerifiedTransport";
 import FreeRegisteredTravelAgents from "./components/home/FreeRegisteredTravelAgents";
 import BlogSection from "./components/home/BlogSection";
 import Testimonial from "./components/home/Testimonial";
-// import Allpackages from "./components/packages/Allpackages";
-// import Packagesbanner from "./components/packages/Packagesbanner";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -37,8 +35,7 @@ const App = () => {
         </div>
       ) : (
         <>
-          {/* <Packagesbanner/>
-          <Allpackages/> */}
+        
           <Navbar />
           <WeddingCarouselTop />
           <Herosection />

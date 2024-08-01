@@ -86,9 +86,9 @@ const InternationalTopTourPackage = () => {
   };
 
   return (
-    <section className="py-10 md:py-20">
-      <div className="mx-auto max-w-[1340px] px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row items-center justify-between mb-8 sm:mb-16">
+    <section className="py-10 md:py-20" id="targetSection" >
+      <div className="mx-auto max-w-[1340px] px-4 sm:px-6 lg:px-8" >
+        <div className="flex flex-col sm:flex-row items-center justify-between mb-8 sm:mb-16" id="international">
           <h2 className="text-center text-[#01055b] md:text-5xl text-3xl font-bold mb-4 sm:mb-0">
             Top International Tour Packages
           </h2>
@@ -128,7 +128,7 @@ const InternationalTopTourPackage = () => {
           </div>
         </div>
 
-        <div ref={sliderContainer} className="keen-slider">
+        <div ref={sliderContainer} className="keen-slider"  >
           {internationalTopTourPackageData.map((item, i) => (
             <div key={i} className="keen-slider__slide">
               <div className="relative w-full h-96 rounded-xl overflow-hidden">
