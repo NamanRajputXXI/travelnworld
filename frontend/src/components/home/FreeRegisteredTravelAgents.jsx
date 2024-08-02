@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import KeenSlider from "keen-slider";
 import "keen-slider/keen-slider.min.css";
+import { Link } from "react-router-dom";
 const FreeRegisteredTravelAgents = () => {
   // Destinations Data
   const ourTravelAgents = [
@@ -177,9 +178,11 @@ const FreeRegisteredTravelAgents = () => {
                           <span className="absolute h-7 left-24 mt-1 w-32 blur-sm backdrop:blur-sm  bg-gray-500 "></span>
                           {item.email}
                         </p>
+                        <Link to ="/contact">
                         <button className="w-40 p-2 flex items-center justify-center text-white rounded-lg bg-[#01055b]">
                           Contact
                         </button>
+                        </Link>
                       </div>
                     </div>
                   </div>

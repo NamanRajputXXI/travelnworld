@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import KeenSlider from "keen-slider";
 import "keen-slider/keen-slider.min.css";
+import { Link } from "react-router-dom";
 
 const InternationalTopTourPackage = () => {
   const internationalTopTourPackageData = [
@@ -145,9 +146,11 @@ const InternationalTopTourPackage = () => {
                   <p className="text-white text-sm leading-6">
                     {item.description}
                   </p>
-                  <button className="bg-white rounded-lg py-2 px-4 text-[#01055b] font-semibold">
+                 <Link to ="/contact">
+                 <button className="bg-white rounded-lg py-2 px-4 text-[#01055b] font-semibold w-full">
                     Contact
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>

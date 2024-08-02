@@ -1,7 +1,7 @@
 
 import React from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
-import { Link } from "react-scroll"; 
+import { Link } from "react-router-dom"; 
 
 const Footer = () => {
   return (
@@ -89,7 +89,7 @@ const Footer = () => {
                     <FaInstagram className="h-6 w-6" />
                   </a>
                 </div>
-                <div className="p-2 bg-white rounded-full flex items-center justify-center">
+                <div className="p-2 bg-red-500 rounded-full flex items-center justify-center">
                   <FaYoutube className="h-6 w-6" />
                 </div>
               </div>

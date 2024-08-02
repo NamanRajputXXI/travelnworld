@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from "react";
-import ClipLoader from "react-spinners/ClipLoader";
 import Herosection from "./components/home/Herosection";
 import Client from "./components/home/Client";
 import Footer from "./components/global/Footer";
@@ -15,6 +14,9 @@ import VerifiedTransport from "./components/home/VerifiedTransport";
 import FreeRegisteredTravelAgents from "./components/home/FreeRegisteredTravelAgents";
 import BlogSection from "./components/home/BlogSection";
 import Testimonial from "./components/home/Testimonial";
+import NextTopLoader from 'nextjs-toploader';
+
+// 
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -22,20 +24,34 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); 
+    }, 400); 
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
+   
+
       {loading ? (
-        <div className="flex justify-center items-center min-h-screen">
-          <ClipLoader color="#123abc" loading={loading} size={50} />
+        <div className="flex justify-center items-center min-h-screen bg-white">
+           <NextTopLoader
+        color="#eb6734"
+        
+        initialPosition={0.08}
+        crawlSpeed={200}
+        height={2}
+        crawl={true}
+        showSpinner={false}
+        easing="ease"
+        speed={200}
+        shadow="0 0 10px #2299DD,0 0 5px #2299DD"
+        zIndex={1600}
+        showAtBottom={false}
+      />
         </div>
       ) : (
         <>
-        
           <Navbar />
           <WeddingCarouselTop />
           <Herosection />
