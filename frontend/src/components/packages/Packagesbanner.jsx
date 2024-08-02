@@ -6,7 +6,7 @@ const Packagesbanner = () => {
     className="w-full h-full bg-cover bg-transparent bg-center "
     style={{
       backgroundImage:
-        "url('public/Images/PackageImages/package.jpg')",
+        "url(' /Images/PackageImages/package.jpg')",
         
     }}
   >

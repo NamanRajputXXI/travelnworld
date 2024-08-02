@@ -8,10 +8,11 @@ import Contact from "./pages/Contact.jsx";
 import SignIn from "./pages/SignIn.jsx";
 import SignUp from "./pages/SignUp.jsx";
 import Blogs from "./pages/Blogs.jsx";
-import Packages from "./pages/Packages.jsx";
+
 import Testimonials from "./pages/Testimonials.jsx";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage.jsx";
 import TermandconditionPage from "./pages/TermandconditionPage.jsx";
+
 import TourPackages from "./pages/TourPackages.jsx";
 
 
@@ -20,7 +21,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <div className="font-dm-sans ">
         <Routes>
-          
           <Route path="/" element={<App />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -29,10 +29,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/TourPackages" element={<TourPackages />} />
           <Route path="/destination" element={<SignUp />} />
           <Route path="/blogs" element={<Blogs />} />
-
+      
           <Route path="/testimonails" element={<Testimonials />} />
-          <Route path="/privacyPolicy" element={<PrivacyPolicyPage />} />
-          <Route path="/terms" element={<TermandconditionPage />} />
+          <Route path="/privacyPolicy" element={<PrivacyPolicyPage/>} />
+          <Route path="/terms" element={<TermandconditionPage/>} />
         </Routes>
       </div>
     </BrowserRouter>
