@@ -8,7 +8,32 @@ export const blogPosts = [
     category: "Andaman",
     author: "John Doe",
     date: "August 20, 2022",
-    content: "Full content of the blog post goes here...",
+    content: [
+      {
+        heading: "This is the Heading",
+        text: "this is the text",
+        imageSrc:
+          "https://cdn.pixabay.com/photo/2017/06/17/18/33/andaman-2413073_640.jpg",
+      },
+      {
+        heading: "This is the Heading",
+        text: "this is the text",
+        imageSrc:
+          "https://cdn.pixabay.com/photo/2017/06/17/18/33/andaman-2413073_640.jpg",
+      },
+      {
+        heading: "This is the Heading",
+        text: "this is the text",
+        imageSrc:
+          "https://cdn.pixabay.com/photo/2017/06/17/18/33/andaman-2413073_640.jpg",
+      },
+      {
+        heading: "This is the Heading",
+        text: "this is the text",
+        imageSrc:
+          "https://cdn.pixabay.com/photo/2017/06/17/18/33/andaman-2413073_640.jpg",
+      },
+    ],
   },
   {
     id: 2,

@@ -25,13 +25,22 @@ const BlogPost = () => {
         <div className="flex flex-col w-full gap-1">
           <div className="flex w-full items-center justify-between">
             <p className="text-2xl">
-              Category:{" "}
+              Category:
               <span className="text-3xl font-bold">{post.category}</span>
             </p>
             <p className="">Author: {post.author}</p>
           </div>
           <p className="">Date: {post.date}</p>
         </div>
+        {post.content.map((con, i) => (
+          <div className="flex flex-col w-full gap-1">
+            <div className="flex w-full items-center justify-between">
+              <p className="text-2xl">{con.heading}</p>
+            </div>
+            <p>{con.text}</p>
+            <img className="w-4/5 " src={con.imageSrc} alt="" />
+          </div>
+        ))}
       </div>
       <Footer />
     </>
