@@ -2,7 +2,7 @@ import express from "express";
 import { config } from "dotenv";
 import cors from "cors";
 import { readFileSync } from "fs";
-import path from "path";
+import path, { basename } from "path";
 
 // Load environment variables
 config({ path: "./config/config.env" });
@@ -41,5 +41,5 @@ app.use((err, req, res, next) => {
 app.listen(7600, () => {
   console.log(`server listening on port ${7600}`);
 });
-
+ 
 export default app;

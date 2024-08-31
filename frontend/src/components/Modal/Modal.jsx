@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Modal = ({ onClose }) => {
   const [firstName, setFirstName] = useState("");
@@ -8,6 +8,8 @@ const Modal = ({ onClose }) => {
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
 
+
+  
   const validate = () => {
     const errors = {};
     if (!firstName.trim()) errors.firstName = "First name is required";
@@ -39,9 +41,7 @@ const Modal = ({ onClose }) => {
   };
 
   return (
-    
- 
-      <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center  items-center z-50 ">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center  items-center z-50 ">
       <div className="bg-white p-10 rounded-lg shadow-lg max-w-md w-full relative pt-11">
         <button
           className="absolute top-4 right-4 text-gray-600 hover:text-gray-900"
@@ -63,8 +63,12 @@ const Modal = ({ onClose }) => {
             />
           </svg>
         </button>
-        <h1 className="text-3xl font-bold text-center mb-6">Let's talk about your project</h1>
-        <p className="text-center text-gray-600 mb-8">Drop us a line through the form below and we'll get back to you</p>
+        <h1 className="text-3xl font-bold text-center mb-6">
+          Let's talk about your project
+        </h1>
+        <p className="text-center text-gray-600 mb-8">
+          Drop us a line through the form below and we'll get back to you
+        </p>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
@@ -121,7 +125,7 @@ const Modal = ({ onClose }) => {
                 id="phone"
                 className={`shadow-sm bg-gray-50 border ${
                   errors.phone ? "border-red-500" : "border-gray-300"
-                } text-gray-900 text-sm rounded-lg block w-full p-3`}
+                } text-gray-900 text-sm rounded-lg block w-full p-3 `}
                 placeholder="Phone number"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
@@ -150,15 +154,19 @@ const Modal = ({ onClose }) => {
           </div>
           <button
             type="submit"
-            className="w-full py-3 px-5 text-sm font-medium text-center text-white bg-[#01055b] rounded-lg hover:bg-primary-800 transition duration-300"
+            className="w-full py-3 px-5 text-sm font-medium text-center text-white  bg-[#01055b]  rounded-lg hover:bg-primary-800 transition duration-300"
           >
             Send message
           </button>
+
+          
         </form>
       </div>
     </div>
+
     
   );
 };
 
 export default Modal;
+

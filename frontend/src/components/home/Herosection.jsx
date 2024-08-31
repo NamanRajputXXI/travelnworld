@@ -100,7 +100,7 @@ const Herosection = () => {
                         href="#"
                         className="text-blue-900 hover:underline dark:text-blue-900"
                       >
-                        terms and conditions
+                        Terms and conditions  
                       </a>
                     </label>
                   </div>

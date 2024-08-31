@@ -1,10 +1,11 @@
+import axios from "axios";
 import React, { useState } from "react";
 
 const ContactForm = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [service, setService] = useState("");
+  const [phone, setphone] = useState("");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState({});
 
@@ -17,7 +18,7 @@ const ContactForm = () => {
     } else if (!/\S+@\S+\.\S+/.test(email)) {
       errors.email = "Email is invalid";
     }
-    if (!service.trim()) errors.service = "Service is required";
+    if (!phone.trim()) errors.service = "phone is required";
     if (!message.trim()) errors.message = "Message is required";
     return errors;
   };
@@ -27,14 +28,28 @@ const ContactForm = () => {
     const errors = validate();
     if (Object.keys(errors).length === 0) {
       // Form is valid, proceed with form submission
-      console.log({ firstName, lastName, email, service, message });
+      // console.log({ firstName, lastName, email, service, message });
       // Reset form fields
       setFirstName("");
       setLastName("");
       setEmail("");
-      setService("");
+      setphone("");
       setMessage("");
       setErrors({});
+
+      console.log("data", firstName, lastName, email, phone, message)
+
+    
+    axios.post("https://travel-backend-seven.vercel.app/data", {
+      firstName,
+      lastName, 
+      email,
+      phone,
+      description: message
+    })
+    .then((data)=>console.log("data success", data))
+    .catch((error)=>console.log("eror", error))
+
     } else {
       // Set validation errors
       setErrors(errors);
@@ -103,18 +118,18 @@ const ContactForm = () => {
             </div>
             <div>
               <input
-                type="number"
+                type="text"
                 id="phone"
                 className={`block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border ${
                   errors.service ? "border-red-500" : "border-gray-300"
                 } shadow-sm   dark:shadow-sm-light`}
                 placeholder=" Phone number"
-                value={Number}
-                onChange={(e) => setService(e.target.value)}
+                value={phone}
+                onChange={(e) => setphone(e.target.value)}
                 required
               />
-              {errors.service && (
-                <p className="text-red-500 text-sm mt-1">{errors.service}</p>
+              {errors.phone && (
+                <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
               )}
             </div>
           </div>

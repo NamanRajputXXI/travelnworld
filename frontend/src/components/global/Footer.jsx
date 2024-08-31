@@ -125,6 +125,7 @@
 
 // export default Footer;
 
+
 import React from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Link } from "react-scroll";

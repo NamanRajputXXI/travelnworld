@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const SignInForm = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -68,8 +68,7 @@ const SignInForm = () => {
                   Sign in
                 </h3>
                 <p className="text-gray-500 text-sm mt-4 leading-relaxed">
-                  Sign in to your account  and 
-                  Your journey begins here.
+                  Sign in to your account and Your journey begins here.
                 </p>
               </div>
 
@@ -157,10 +156,11 @@ const SignInForm = () => {
               <p className="text-sm mt-8 text-center text-gray-800">
                 Don't have an account?{" "}
                 <Link
-                   to="/signup"
+                  to="/signup"
                   className="text-[#01055b] font-semibold hover:underline ml-1 whitespace-nowrap"
                 >
                   Register here
+                  
                 </Link>
               </p>
             </form>
